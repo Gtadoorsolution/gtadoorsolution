@@ -1,0 +1,60 @@
+.title {
+    font-weight: 700;
+    font-size: 38px;
+    /* margin: 0 170px; */
+}
+
+.title2 {
+    font-weight: 700;
+    color: rgb(78, 78, 78);
+    /* font-size: 38px; */
+    /* margin: 0 170px; */
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+/* .grid {
+    flex: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10%, auto));
+} */
+
+.grid {
+    display: flex;
+    /* Замінюємо grid на flex */
+    flex-wrap: wrap;
+    /* Дозволяємо елементам переноситися на новий рядок, якщо не вистачає місця */
+    text-align: center;
+    margin: 0 50px;
+    padding: 0 60px;
+}
+
+.grid>* {
+    flex-basis: calc(33.33% - 1rem);
+    /* Задаємо ширину кожного елемента на 33.33% з відступом 0.5rem між ними */
+    margin: 0.5rem;
+    /* Задаємо відступи між елементами */
+}
+
+.image {
+    /* display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 100px;
+    border-radius: 50% */
+}
+
+.element {
+    padding-left: 0;
+    padding-right: 30px;
+}

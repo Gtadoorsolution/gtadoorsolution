@@ -39,7 +39,7 @@ export default function NavBar() {
                 <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
             </div>
             <ul className={styles.menuPC}>
-                <li style={{ color: "#ba9765" }}><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>

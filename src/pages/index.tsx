@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import styles from '../page.module.css'
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
+import HomeContent from '@/components/HomeContent';
 // import Image from 'next/image';
 
 const Home: NextPage = () => {
@@ -23,19 +24,16 @@ const Home: NextPage = () => {
         </div>
         <NavBar />
       </div>
-      <div style={{ flex: "1" }}>
-        <div>Center</div>
-      </div>
+      <HomeContent />
       <Footer />
       <div style={{
-        textAlign: "center",
         backgroundColor: "#0a0300",
         color: "#c5c5c5",
       }}>
-        <hr style={{ width: "100%", margin: 10 }} />
-        <p style={{ margin: 15 }}>© 2024</p>
+        <hr style={{ borderColor: "black", width: "100%", margin: 30, }} />
+        <p style={{ margin: 25 }}>© 2024</p>
       </div>
-    </main>
+    </main >
   </>
 };
 

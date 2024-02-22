@@ -1,0 +1,96 @@
+.wrapper{
+    padding: 85px 0;
+}
+
+.title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 38px;
+    margin: 45px 170px;
+}
+
+.title2 {
+    font-weight: 700;
+    text-align: center;
+    color: rgb(78, 78, 78);
+    /* font-size: 38px; */
+    margin: 0 170px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+/* .grid {
+    flex: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(10%, auto));
+} */
+
+.grid {
+    display: flex;
+    /* Замінюємо grid на flex */
+    flex-wrap: wrap;
+    /* Дозволяємо елементам переноситися на новий рядок, якщо не вистачає місця */
+    text-align: center;
+    margin: 0 50px;
+    padding: 0 60px;
+}
+
+.grid>* {
+    flex-basis: calc(33.33% - 1rem);
+    /* Задаємо ширину кожного елемента на 33.33% з відступом 0.5rem між ними */
+    margin: 0.5rem;
+    /* Задаємо відступи між елементами */
+}
+
+@media (max-width: 700px) {
+    .grid>* {
+        flex-basis: calc(100% - 1rem);
+        /* margin: 20rem; */
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .title2 {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1120px) {
+    .grid>* {
+        flex-basis: calc(50% - 1rem);
+        /* margin: 20rem; */
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .title2 {
+        font-size: 14px;
+    }
+}
+
+.image {
+    /* display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 100px;
+    border-radius: 50% */
+}
+
+.element {
+    padding-left: 0;
+    padding-right: 30px;
+}
