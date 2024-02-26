@@ -3,6 +3,7 @@ import styles from '../styles/nav.module.css';
 import Image from 'next/image';
 import HeaderContacts from './HeaderContacts';
 import Link from 'next/link';
+import PageContainer from './PageContainer';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav >
+        <nav>
             <div>
                 <HeaderContacts />
                 <div className={styles.navbar}>
