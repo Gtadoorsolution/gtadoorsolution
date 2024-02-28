@@ -7,7 +7,7 @@ import Head from 'next/head';
 interface ServiceTemplateProps {
     title: string | undefined;
     description: string | undefined;
-    image: string | undefined; 
+    image: string | undefined;
 }
 
 const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, image }) => {
@@ -32,7 +32,8 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                    // className="rounded"
+                        priority
+                        loading='eager'
                     />
                 </div>
                 <h1 className={styles.title}>{title}</h1>

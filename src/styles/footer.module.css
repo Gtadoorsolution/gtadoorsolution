@@ -34,6 +34,10 @@
     max-width: 30ch;
 }
 
+.service{
+    padding: 6px;
+}
+
 /* .logo {
     position: relative;
 } */

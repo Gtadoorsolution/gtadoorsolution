@@ -32,10 +32,12 @@ export default function NavBar() {
                 <div className={styles.navbar}>
                     <div className={styles.logo}>
                         <Image
-                            src="/logo-inverse.webp"
+                            src="/logo-inverse (103x33).webp"
                             alt="Description of the image"
-                            width={120}
-                            height={35}
+                            width={103}
+                            height={33}
+                            priority
+                            loading='eager'
                         />
                     </div>
                     <div className={styles.burger} onClick={handleMenuToggle}>

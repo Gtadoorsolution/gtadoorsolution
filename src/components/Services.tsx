@@ -33,10 +33,15 @@ export default function Services() {
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
+                                        // layout="responsive"
+                                        priority={true}
+                                        placeholder="blur"
+                                        blurDataURL="/default-ui.webp"
+                                        loading='eager'
                                     />
                                 </div>
                                 <p className={styles.title3}>Best Sercice</p>
-                                <h3 className={styles.title4}>{service.title}</h3>
+                                <h2 className={styles.title4}>{service.title}</h2>
                                 <p className={styles.description}>{service.description}</p>
                             </div>
                         </Link>

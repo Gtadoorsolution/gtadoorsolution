@@ -12,11 +12,12 @@ export default function Footer() {
                 <div className={styles.card}>
                     <Image
                         className={styles.logo}
-                        src="/logo-inverse.webp"
+                        src="/logo-inverse (103x33).webp"
                         alt="Next.js Logo"
-                        width={180}
-                        height={37}
+                        width={103}
+                        height={33}
                         priority
+                        loading='eager'
                     />
                 </div>
                 <div className={styles.card}>
@@ -31,10 +32,12 @@ export default function Footer() {
                     <h2>
                         Links
                     </h2>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="#">Services</Link></li>
-                    <li><Link href="about">About</Link></li>
-                    <li><Link href="contact">Contact</Link></li>
+                    <ul>
+                        <li className={styles.service}><Link href="/">Home</Link></li>
+                        <li className={styles.service}><Link href="#">Services</Link></li>
+                        <li className={styles.service}><Link href="about">About</Link></li>
+                        <li className={styles.service}><Link href="contact">Contact</Link></li>
+                    </ul>
                 </div>
                 <div
                     className={styles.card}>
