@@ -3,7 +3,6 @@ import styles from '../styles/nav.module.css';
 import Image from 'next/image';
 import HeaderContacts from './HeaderContacts';
 import Link from 'next/link';
-import PageContainer from './PageContainer';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,8 +46,8 @@ export default function NavBar() {
                     <ul className={styles.menuPC}>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="#">Services</Link></li>
-                        <li><Link href="about">About</Link></li>
-                        <li><Link href="contact">Contact</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/contact">Contact</Link></li>
                     </ul>
                     {isMenuOpen && (
                         <div className={styles.dropdown}>

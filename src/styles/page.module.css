@@ -1,0 +1,28 @@
+.wrapper {
+    /* width: 200px;
+    height: 300px; */
+    /* padding: 100px; */
+    margin: 100px;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 70vw;
+    height: 70vw;
+}
+
+.image {
+    position: absolute;
+    padding-top: 10px;
+    /* max-width: 50vw; */
+    /* max-height: 50vw; */
+}
+
+.title {
+    padding: 10px;
+}
+
+.description {
+    color: rgb(99, 99, 99);
+    padding: 10px;
+}

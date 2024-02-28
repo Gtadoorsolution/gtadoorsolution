@@ -4,6 +4,7 @@ import Footer from './Footer';
 import HeaderContacts from './HeaderContacts';
 import UnderFooter from './UnderFooter';
 import styles from '../page.module.css'
+import PageContainer from './PageContainer';
 
 interface LayoutProps {
     children: ReactNode; // Використовуйте тип ReactNode для властивості children
@@ -14,7 +15,9 @@ export default function Layout({ children }: LayoutProps) {
         <main className={styles.main}>
             {/* <HeaderContacts /> */}
             <Navbar />
-            <div>{children}</div>
+            <PageContainer>
+                <div>{children}</div>
+            </PageContainer>
             <Footer />
             {/* <UnderFooter /> */}
         </main>

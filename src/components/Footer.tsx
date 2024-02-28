@@ -2,29 +2,30 @@ import React from 'react'
 import styles from '../styles/footer.module.css'
 import UnderFooter from './UnderFooter'
 import Link from 'next/link'
+import Image from 'next/image'
+import contacts from '@/data/contacts'
 
 export default function Footer() {
     return (
         <footer>
             <div className={styles.grid}>
-                {/* <div className={styles.card}>
-          <Image
-            className={styles.logo}
-            src="/logo-inverse.webp"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div> */}
+                <div className={styles.card}>
+                    <Image
+                        className={styles.logo}
+                        src="/logo-inverse.webp"
+                        alt="Next.js Logo"
+                        width={180}
+                        height={37}
+                        priority
+                    />
+                </div>
                 <div className={styles.card}>
                     <h2>
                         Office
                     </h2>
-                    <div>0000 Locksmith St, Ontario</div>
-                    <div>AA AAA AAAA</div>
-                    <div>(000) 000 0000</div>
-                    <div>locksmith@gmail.com</div>
+                    <div>{contacts.adress || "..."}</div>
+                    <div>{contacts.telNumber || "..."}</div>
+                    <div>{contacts.email || "..."}</div>
                 </div>
                 <div className={styles.card}>
                     <h2>
