@@ -1,0 +1,25 @@
+.wrapper{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutUs {
+    text-align: center;
+    font-size: 14px;
+    color: #838294;
+    font-weight: 700;
+    text-indent: 0px;
+    letter-spacing: 1.8px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.clientsTestimonials {
+    text-align: center;
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: -1.8px;
+    font-weight: 700;
+    color: #181818;
+    padding-bottom: 20px;
+}
