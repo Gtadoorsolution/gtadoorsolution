@@ -42,8 +42,8 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                 </div>
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>
-                <h2>Lorem ipsum dolor sit</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo sit dicta. Facere blanditiis quam eius molestiae consectetur doloremque voluptates perspiciatis veniam accusantium repellendus, iste culpa assumenda magnam maiores voluptatibus.</p>
+                <h2  className={styles.title}>Lorem ipsum dolor sit</h2>
+                <p className={styles.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo sit dicta. Facere blanditiis quam eius molestiae consectetur doloremque voluptates perspiciatis veniam accusantium repellendus, iste culpa assumenda magnam maiores voluptatibus.</p>
                 <div>
                     <Swiper
                         style={{ paddingBottom: 40 }}
@@ -121,9 +121,9 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellat earum atque, alias, voluptatibus voluptate laborum officiis molestiae fuga esse fugit odit aliquid quae mollitia nihil? Natus repellat nam ipsa!</p>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!</p>
+                <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellat earum atque, alias, voluptatibus voluptate laborum officiis molestiae fuga esse fugit odit aliquid quae mollitia nihil? Natus repellat nam ipsa!</p>
+                <h3 className={styles.title}>Lorem ipsum</h3>
+                <p className={styles.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!</p>
                 <Image
                     // style={{paddingBottom: 100}}
                     // className={styles.image}
@@ -139,7 +139,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                         33vw
                                         "
                 />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe voluptas itaque fuga accusamus sed natus, voluptate facere. Quas voluptatum facilis culpa aspernatur perferendis veritatis cumque pariatur minima excepturi vero?</p>
+                <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe voluptas itaque fuga accusamus sed natus, voluptate facere. Quas voluptatum facilis culpa aspernatur perferendis veritatis cumque pariatur minima excepturi vero?</p>
             </div>
         </Layout>
     )

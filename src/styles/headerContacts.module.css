@@ -1,0 +1,11 @@
+.contacts {
+    background: #1d1d1d;
+    color: #cbc9d1;
+    height: 30;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 14;
+    padding: 1px;  
+    /* margin: 1px;   */
+}
