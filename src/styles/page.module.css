@@ -6,14 +6,15 @@
 }
 
 .imageWrapper {
-    position: relative;
-    width: 70vw;
-    height: 70vw;
+    padding: 0 20%;
+    /* position: relative; */
+    /* width: 70vw;
+    height: 70vw; */
 }
 
 .image {
-    position: absolute;
-    padding-top: 10px;
+    /* position: absolute; */
+    /* padding-top: 10px; */
     /* max-width: 50vw; */
     /* max-height: 50vw; */
 }
