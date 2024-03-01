@@ -4,8 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/page.module.css'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css';
+import { Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/swiper-bundle.css'
 
 interface ServiceTemplateProps {
     title: string | undefined;
@@ -46,13 +46,10 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo sit dicta. Facere blanditiis quam eius molestiae consectetur doloremque voluptates perspiciatis veniam accusantium repellendus, iste culpa assumenda magnam maiores voluptatibus.</p>
                 <div>
                     <Swiper
-                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        style={{ paddingBottom: 40 }}
+                        modules={[Pagination, Scrollbar, A11y]}
                         spaceBetween={0}
-                        navigation
                         pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log('slide change')}
                         breakpoints={{
                             500: {
                                 slidesPerView: 1,
@@ -64,6 +61,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                 slidesPerView: 3,
                             },
                         }}
+                        loop={true}
                     >
                         <SwiperSlide>
                             <Image

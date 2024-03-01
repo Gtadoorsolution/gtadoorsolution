@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/swiper-bundle.css'
 import Comment from './Comment';
 import styles from '../styles/comments.module.css'
 import comments from '@/data/coments';
@@ -13,14 +14,10 @@ export default function Comments() {
                 <p className={styles.clientsTestimonials}>Clients' Testimonials</p>
             </div>
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                style={{ paddingBottom: 40 }}
+                modules={[Pagination, Scrollbar, A11y]}
                 spaceBetween={0}
-                // slidesPerView={3}
-                navigation
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 breakpoints={{
                     500: {
                         slidesPerView: 1,
@@ -32,6 +29,7 @@ export default function Comments() {
                         slidesPerView: 3,
                     },
                 }}
+                loop={true}
             >
                 {comments.map((comment, index) => (
                     <SwiperSlide key={index}>
