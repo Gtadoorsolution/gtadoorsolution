@@ -26,7 +26,7 @@ const servicesList = [
     {
         title: "Fire-Rated Wood Doors",
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
-        link: "services/fire-rated-wood-doors/",
+        link: "/services/fire-rated-wood-doors/",
         image: "/services/Fire-Rated Wood Doors.jpg"
     },
     {
