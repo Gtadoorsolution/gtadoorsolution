@@ -30,10 +30,10 @@ const servicesList = [
         image: "/services/Commercial Door Repair.jpg"
     },
     {
-        title: "Fire-Rated Wood Doors",
+        title: "Front Entry Doors",
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
         link: "/services/fire-rated-wood-doors/",
-        image: "/services/Fire-Rated Wood Doors.jpg"
+        image: "/services/Front Entry Doors.jpg"
     },
     {
         title: "Metal FireRated Doors",
