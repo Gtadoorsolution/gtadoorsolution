@@ -42,14 +42,11 @@ export default function NavBar() {
                 <HeaderContacts />
                 <div className={styles.navbar}>
                     <div className={styles.logo}>
-                        <Image
-                            src="/logo-inverse (103x33).webp"
-                            alt="Description of the image"
-                            width={103}
-                            height={33}
-                            priority
-                            loading='eager'
-                        />
+                        <Link href="/">
+                            <svg style={{display: "block", margin: 0, padding:0, border: 0}} width="100" height="60" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                                <text x="50%" y="65%" font-family="Verdana" font-size="120" fill="white" text-anchor="middle" alignment-baseline="middle">DS</text>
+                            </svg>
+                        </Link>
                     </div>
                     <div className={styles.burger} onClick={handleMenuToggle}>
                         <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
@@ -61,7 +58,7 @@ export default function NavBar() {
                         <li>
                             <span onClick={handleMenuToggleDesktop}>Services</span>
                             {isMenuOpenDesktop && (
-                                <ul className={`${styles.submenu} ${isMenuOpenDesktop && styles.open}`}>
+                                <ul className={`${styles.submenuDesctop} ${isMenuOpenDesktop && styles.open}`}>
                                     {servicesList.map(service => <li>
                                         <Link href={service.link}>
                                             <div>
@@ -98,13 +95,16 @@ export default function NavBar() {
                                 <li className={styles.menuItem}>
                                     <a href="#">Home</a>
                                 </li>
-                                <li className={styles.menuItem}>
+                                <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
                                     <a href="#">About</a>
+                                </li>
+                                <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
+                                    <a href="#">Contact</a>
                                 </li>
                                 <li className={styles.menuItem}>
                                     <span onClick={handleMenuToggleMobile}>Services</span>
                                     {isMenuOpenMobile && (
-                                        <ul className={`${styles.submenu} ${isMenuOpenMobile && styles.open}`}>
+                                        <ul className={`${styles.submenuMobile} ${isMenuOpenMobile && styles.open}`}>
                                             {servicesList.map(service => <li>
                                                 <Link href={service.link}>
                                                     <p>{service.title}</p>
@@ -112,9 +112,6 @@ export default function NavBar() {
                                             </li>)}
                                         </ul>
                                     )}
-                                </li>
-                                <li className={styles.menuItem}>
-                                    <a href="#">Contact</a>
                                 </li>
                             </ul>
                         </div>

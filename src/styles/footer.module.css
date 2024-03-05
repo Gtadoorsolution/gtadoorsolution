@@ -5,6 +5,9 @@
     max-width: 100%;
     color: #c5c5c5;
     background-color: #0a0300;
+    font-size: 13px;
+    color: #a1a1a1;
+    line-height: 18px;
 }
 
 .card {
@@ -36,6 +39,7 @@
 
 .service{
     padding: 6px;
+    list-style-type: none;
 }
 
 /* .logo {
