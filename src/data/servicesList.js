@@ -1,15 +1,21 @@
 const servicesList = [
     {
-        title: "Access Control System",
-        description: "Popular for tracking employee attendance or traffic and ideal for providing added levels of security for sensitive documents, these systems can offer state-of-the-art technology with easy-to-use features.",
-        link: "/services/access-control-system/",
-        image: "/services/Access-control-system.jpg"
+        title: "Locksmith Services",
+        description: "We have been proudly serving the GTA for over 20 years, and over time, we have become known for our fast, reliable and effective locksmith services.",
+        link: "/services/locksmith-services/",
+        image: "/services/Locksmith-Service.jpg"
     },
     {
         title: "Aluminum Storefronts",
         description: "Designed and used for schools, retail stores, offices and any commercial buildings, these doors are professionally installed to guarantee top quality safety and security to your storefront or building.",
         link: "/services/aluminum-storefronts/",
         image: "/services/Aluminum-Storefronts.jpg"
+    },
+    {
+        title: "Access Control System",
+        description: "Popular for tracking employee attendance or traffic and ideal for providing added levels of security for sensitive documents, these systems can offer state-of-the-art technology with easy-to-use features.",
+        link: "/services/access-control-system/",
+        image: "/services/Access-control-system.jpg"
     },
     {
         title: "Automatic Doors",
@@ -28,12 +34,6 @@ const servicesList = [
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
         link: "/services/fire-rated-wood-doors/",
         image: "/services/Fire-Rated Wood Doors.jpg"
-    },
-    {
-        title: "Locksmith Services",
-        description: "We have been proudly serving the GTA for over 20 years, and over time, we have become known for our fast, reliable and effective locksmith services.",
-        link: "/services/locksmith-services/",
-        image: "/services/Locksmith-Service.jpg"
     },
     {
         title: "Metal FireRated Doors",
