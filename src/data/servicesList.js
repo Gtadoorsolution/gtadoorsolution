@@ -47,6 +47,12 @@ const servicesList = [
         link: "/services/fire-rated-wood-doors/",
         image: "/services/Front Entry Doors.jpg"
     },
+    {
+        title: "Emergency Lockout",
+        description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
+        link: "/services/fire-rated-wood-doors/",
+        image: "/services/Emergency Lockout.jpg"
+    },
 ]
 
 export default servicesList

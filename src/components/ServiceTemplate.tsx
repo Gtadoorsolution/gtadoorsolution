@@ -24,7 +24,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                 />
             </Head>
             <div className={styles.wrapper}>
-                <div className={styles.imageWrapper}>
+                {/* <div className={styles.imageWrapper}>
                     <Image
                         src={image || '/default-ui.webp'}
                         alt={title || 'alt'}
@@ -39,7 +39,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                         priority
                         loading='eager'
                     />
-                </div>
+                </div> */}
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>
                 <h2  className={styles.title}>Lorem ipsum dolor sit</h2>
