@@ -30,16 +30,22 @@ const servicesList = [
         image: "/services/Commercial Door Repair.jpg"
     },
     {
-        title: "Front Entry Doors",
-        description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
-        link: "/services/fire-rated-wood-doors/",
-        image: "/services/Front Entry Doors.jpg"
-    },
-    {
         title: "Metal FireRated Doors",
         description: "Fire-rated doors play a major role in reducing damage caused by fire. These doors provide maximum safety to a property when fires occur. Not all fire-rated doors are created equal.",
         link: "/services/metal-fire-rated-doors",
         image: "/services/Metal FireRated Doors.jpg"
+    },
+    {
+        title: "Garage Doors",
+        description: "Garage Doors. Lorem ipsum",
+        link: "/services/metal-fire-rated-doors",
+        image: "/services/garage-doors.jpg"
+    },
+    {
+        title: "Front Entry Doors",
+        description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
+        link: "/services/fire-rated-wood-doors/",
+        image: "/services/Front Entry Doors.jpg"
     },
 ]
 
