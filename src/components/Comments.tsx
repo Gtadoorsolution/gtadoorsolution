@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/swiper-bundle.css'
 import Comment from './Comment';
@@ -15,7 +15,8 @@ export default function Comments() {
             </div>
             <Swiper
                 style={{ paddingBottom: 40 }}
-                modules={[Pagination, Scrollbar, A11y]}
+                navigation
+                modules={[Pagination, Scrollbar, A11y, Navigation]}
                 spaceBetween={0}
                 pagination={{ clickable: true }}
                 breakpoints={{

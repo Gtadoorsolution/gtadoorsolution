@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/page.module.css'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 import manufacturers from '@/data/manufacturers';
 import manufacturersStyles from "../styles/manufacturers.module.css"
@@ -40,7 +40,9 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                     </div>
                     <div className={locksmithStyles.sliderWrapper}>
                         <Swiper
-                            modules={[Pagination, Scrollbar, A11y]}
+                        style={{ paddingBottom: 30 }}
+                            navigation
+                            modules={[Pagination, Scrollbar, A11y, Navigation]}
                             spaceBetween={0}
                             pagination={{ clickable: true }}
                             slidesPerView={1}
@@ -101,10 +103,13 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                     </div>
                     <div className={locksmithStyles.sliderWrapper}>
                         <Swiper
-                            modules={[Pagination, Scrollbar, A11y]}
-                            spaceBetween={0}
+                            style={{ paddingBottom: 30 }}
+                            navigation
+                            modules={[Pagination, Scrollbar, A11y, Navigation]}
+                            // spaceBetween={1}
                             pagination={{ clickable: true }}
-                            slidesPerView={1}
+                            // slidesPerView={1}
+                            autoplay
                             loop={true}
                         >
                             <SwiperSlide>
