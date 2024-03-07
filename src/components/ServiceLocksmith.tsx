@@ -20,7 +20,7 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
     return (
         <Layout>
             <Head>
-                {title}
+                <title>LOCKSMITH SERVICES</title>
                 <meta
                     name="description"
                     content="Короткий опис вашої сторінки, який підсумовує її зміст."
@@ -170,8 +170,8 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                 <h3 className={locksmithStyles.title2}>We work with manufacturers in our industry</h3>
                 <div className={manufacturersStyles['grid-container']}>
                     {
-                        manufacturers.map((image, index) => <div>
-                            <div className={styles['grid-item']} key={index}>
+                        manufacturers.map((image, index) => <div key={index}>
+                            <div className={styles['grid-item']} >
                                 <Image
                                     className={manufacturersStyles['image']}
                                     src={image.src}

@@ -28,9 +28,8 @@ const Comment: React.FC<CommentProps> = ({ comment }) => {
             </div>
             {/* Відображення інших властивостей коментаря */}
             <p className={styles.comment}>{comment.comment}</p>
-            <h4 className={styles.name}>{comment.name}</h4>
+            <p className={styles.name}>{comment.name}</p>
             <p className={styles.comment}>{comment.profession}</p>
-
         </div>
     );
 }

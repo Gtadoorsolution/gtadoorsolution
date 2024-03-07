@@ -3,10 +3,10 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(10%, auto));
     max-width: 100%;
-    color: #c5c5c5;
+    color: #e2e2e2;
     background-color: #0a0300;
     font-size: 13px;
-    color: #a1a1a1;
+    color: #e2e2e2;
     line-height: 18px;
 }
 
@@ -31,7 +31,6 @@
 
 .card p {
     margin: 0;
-    opacity: 0.6;
     font-size: 0.9rem;
     line-height: 1.5;
     max-width: 30ch;
@@ -41,28 +40,6 @@
     padding: 6px;
     list-style-type: none;
 }
-
-/* .logo {
-    position: relative;
-} */
-
-/* Enable hover only on non-touch devices */
-/* @media (hover: hover) and (pointer: fine) {
-    .card:hover {
-        background: rgba(var(--card-rgb), 0.1);
-        border: 1px solid rgba(var(--card-border-rgb), 0.15);
-    }
-
-    .card:hover span {
-        transform: translateX(4px);
-    }
-} */
-
-/* @media (prefers-reduced-motion) {
-    .card:hover span {
-        transform: none;
-    }
-} */
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -89,13 +66,3 @@
         grid-template-columns: repeat(2, 50%);
     }
 }
-
-/* @media (prefers-color-scheme: dark) {
-    .vercelLogo {
-        filter: invert(1);
-    }
-
-    .logo {
-        filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-    }
-} */

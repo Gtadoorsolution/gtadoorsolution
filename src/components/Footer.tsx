@@ -10,9 +10,9 @@ export default function Footer() {
         <footer>
             <div className={styles.grid}>
                 <div className={styles.card}>
-                    <Link href="/">
+                    <Link href="/" aria-label="Home">
                         <svg style={{ display: "block", margin: 0, padding: 0, border: 0 }} width="100" height="60" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                            <text x="50%" y="65%" font-family="Verdana" font-size="120" fill="white" text-anchor="middle" alignment-baseline="middle">DS</text>
+                            <text x="50%" y="65%" fontFamily="Verdana" fontSize="120" fill="white" textAnchor="middle" alignmentBaseline="middle">DS</text>
                         </svg>
                     </Link>
                 </div>
