@@ -9,6 +9,9 @@ import 'swiper/swiper-bundle.css'
 import manufacturers from '@/data/manufacturers';
 import manufacturersStyles from "../styles/manufacturers.module.css"
 import locksmithStyles from "../styles/locksmithServises.module.css"
+import locksmithSubCategoryStyles from "../styles/locksmithSubCategory.module.css"
+import residentialLocksmith from '@/data/residentialLocksmith';
+import commercialLocksmith from '@/data/commercialLocksmith';
 
 interface ServiceLocksmithProps {
     title: string | undefined;
@@ -40,7 +43,7 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                     </div>
                     <div className={locksmithStyles.sliderWrapper}>
                         <Swiper
-                        style={{ paddingBottom: 30 }}
+                            style={{ paddingBottom: 30 }}
                             navigation
                             modules={[Pagination, Scrollbar, A11y, Navigation]}
                             spaceBetween={0}
@@ -91,6 +94,31 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                                 />
                             </SwiperSlide>
                         </Swiper>
+                    </div>
+                    <div className={locksmithSubCategoryStyles.wrapper}>
+                        {
+                            residentialLocksmith.map((category, index) => <div
+                                key={index}
+                            >
+                                <div className={locksmithSubCategoryStyles['image-container']}>
+                                    <Image
+                                        className={locksmithSubCategoryStyles.image}
+                                        src={category.image || "/default-ui.webp"}
+                                        alt={category.title}
+                                        width={600}
+                                        height={419}
+                                        layout="responsive"
+                                        sizes="
+                                        (max-width: 640px) 100vw,
+                                        (max-width: 1024px) 50vw,
+                                        33vw
+                                        "
+                                    />
+                                </div>
+                                <p className={locksmithSubCategoryStyles.title}>{category.title}</p>
+                                <p className={locksmithSubCategoryStyles.description}>{category.description}</p>
+                            </div>)
+                        }
                     </div>
                 </div>
                 {/* <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellat earum atque, alias, voluptatibus voluptate laborum officiis molestiae fuga esse fugit odit aliquid quae mollitia nihil? Natus repellat nam ipsa!</p> */}
@@ -169,6 +197,31 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                                 />
                             </SwiperSlide>
                         </Swiper>
+                    </div>
+                    <div className={locksmithSubCategoryStyles.wrapper}>
+                        {
+                            commercialLocksmith.map((category, index) => <div
+                                key={index}
+                            >
+                                <div className={locksmithSubCategoryStyles['image-container']}>
+                                    <Image
+                                        className={locksmithSubCategoryStyles.image}
+                                        src={category.image || "/default-ui.webp"}
+                                        alt={category.title}
+                                        width={600}
+                                        height={419}
+                                        layout="responsive"
+                                        sizes="
+                                        (max-width: 640px) 100vw,
+                                        (max-width: 1024px) 50vw,
+                                        33vw
+                                        "
+                                    />
+                                </div>
+                                <p className={locksmithSubCategoryStyles.title}>{category.title}</p>
+                                <p className={locksmithSubCategoryStyles.description}>{category.description}</p>
+                            </div>)
+                        }
                     </div>
                 </div>
                 {/* <p className={styles.description}>{description}</p> */}

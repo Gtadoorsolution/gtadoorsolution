@@ -54,7 +54,7 @@
 
 @media (max-width: 1500px) {
     .wrapper {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .textWrapper {
