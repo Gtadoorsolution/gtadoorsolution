@@ -8,6 +8,7 @@ import { Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 import manufacturers from '@/data/manufacturers';
 import manufacturersStyles from "../styles/manufacturers.module.css"
+import locksmithStyles from "../styles/locksmithServises.module.css"
 
 interface ServiceLocksmithProps {
     title: string | undefined;
@@ -26,168 +27,147 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                 />
             </Head>
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>{title}</h1>
-                <div>
-                    <p style={{}}> - Access control systems –  installation, change, service and repair</p>
-                    <p style={{}}> - Lock installation, repair and re-keying</p>
-                    <p style={{}}> - High security locks</p>
-                    <p style={{}}> - Master keying solutions</p>
-                    <p style={{}}> - Locking devices for a range of different applications</p>
-                    <p style={{}}> - Lockout services (any type of doors, cars, desks, safes, mailboxes)</p>
-                    <p style={{}}> - Access control including keyless entry systems</p>
-                    <p style={{}}> - Locks change to all types doors and window</p>
-                    <p style={{}}> - Quality  locksmith service</p>
-                    <p style={{}}> - And more</p>
+                <div className={locksmithStyles.logo}>
+                    <h1 className={locksmithStyles.logoText}>LOCKSMITH SERVICES</h1>
                 </div>
-                <h2 className={styles.title2}>Residential locksmith</h2>
-                <p className={styles.description}>
-                    Encountering lock troubles inyour home? Our Residential Locksmith service promptly resolves various door-related issues without causing any harm by forcefully opening them. Whether you need lock fixing, tuning, or substitution, our skilled crew arrives within 15 minutes, guaranteeing your home's safety and operational effectiveness through effective and proficient remedies.</p>
-                <div>
-                    <Swiper
-                        style={{ paddingBottom: 40 }}
-                        modules={[Pagination, Scrollbar, A11y]}
-                        spaceBetween={0}
-                        pagination={{ clickable: true }}
-                        breakpoints={{
-                            500: {
-                                slidesPerView: 1,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                            },
-                            1200: {
-                                slidesPerView: 3,
-                            },
-                        }}
-                        loop={true}
-                    >
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/recedential/1.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                <h2 className={locksmithStyles.title2}>Residential locksmith</h2>
+                <div className={locksmithStyles.wrapper}>
+                    <div className={locksmithStyles.textWrapper}>
+                        <p className={locksmithStyles.textBolt}>Have you locked yourself out of your house? Need a lock rekey for your new apartment, install a new door lock, or duplicate keys? Whatever your door locks and keys needs, you can count on Mr. Locks to serve you.</p>
+                        <p className={locksmithStyles.text}>Mr. Locks provides a complete range of residential locksmith services and solutions for the residents of New York City. We install, repair and replace any types of door locks, safes, doors, and gates.</p>
+                        <p className={locksmithStyles.text}>If you interested to get more information about the latest solutions in home security, or just need a cylinder lock changed, we can help. Our professional locksmiths can handle all your home security problems to make sure that your family will be safe and secure.</p>
+                        <p className={locksmithStyles.textBolt}>Our 24 hour emergency locksmiths are available any time, day or night. Contact Us.</p>
+                    </div>
+                    <div className={locksmithStyles.sliderWrapper}>
+                        <Swiper
+                            modules={[Pagination, Scrollbar, A11y]}
+                            spaceBetween={0}
+                            pagination={{ clickable: true }}
+                            slidesPerView={1}
+                            loop={true}
+                        >
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/recedential/1.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/recedential/2.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/recedential/2.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/recedential/3.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/recedential/3.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                    </Swiper>
+                                />
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
                 </div>
                 {/* <p className={styles.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellat earum atque, alias, voluptatibus voluptate laborum officiis molestiae fuga esse fugit odit aliquid quae mollitia nihil? Natus repellat nam ipsa!</p> */}
-                <h3 className={styles.title2}>Commercial locksmith</h3>
-                <p className={styles.description}>
-                    GTAdoorsolution Locksmith for Toronto and GTA offers Commercial Locksmith Services throughout the Toronto and GTA areas. We provide a diverse array of professional locksmith services, including 24-hour emergency commercial services across the region. Our dependable team of specialists from GTADoorSolution Locksmith is equipped to assist you with any commercial lock repair and installation needs.</p>
-                <div>
-                    <Swiper
-                        style={{ paddingBottom: 40 }}
-                        modules={[Pagination, Scrollbar, A11y]}
-                        spaceBetween={0}
-                        pagination={{ clickable: true }}
-                        breakpoints={{
-                            500: {
-                                slidesPerView: 1,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                            },
-                            1200: {
-                                slidesPerView: 3,
-                            },
-                        }}
-                        loop={true}
-                    >
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/commercial/1.jpeg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                <h3 className={locksmithStyles.title2}>Commercial locksmith</h3>
+                <div className={locksmithStyles.wrapper}>
+                    <div className={locksmithStyles.textWrapper}>
+                        <p className={locksmithStyles.textBolt}>Mr. Locks was founded in 2003, and has since become one of New York’s leading locksmith companies. We provide commercial locksmith services to new construction projects, property management companies, real estate agencies, architects and interior designers, retail stores,  restaurants, schools, universities, medical facilities, apartment complexes, small businesses and numerous other commercial facilities around the city.</p>
+                        <p className={locksmithStyles.text}>Whether you are a business owner or responsible for a retail store, warehouse, single office, entire office building, or other commercial space in New York City, Mr. Locks can provide high-quality commercial locksmith services and security solutions according to your needs and building requirements.</p>
+                        <p className={locksmithStyles.textBolt}>We are licensed, bonded and have insurance coverage over $5 million.</p>
+                    </div>
+                    <div className={locksmithStyles.sliderWrapper}>
+                        <Swiper
+                            modules={[Pagination, Scrollbar, A11y]}
+                            spaceBetween={0}
+                            pagination={{ clickable: true }}
+                            slidesPerView={1}
+                            loop={true}
+                        >
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/commercial/1.jpeg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/commercial/2.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/commercial/2.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/commercial/3.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/commercial/3.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/commercial/2.jpg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    src={"/services/locksmith/commercial/2.jpg"}
+                                    alt={"default-ui.webp"}
+                                    width={600}
+                                    height={419}
+                                    layout="responsive"
+                                    sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                            />
-                        </SwiperSlide>
-                    </Swiper>
+                                />
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
                 </div>
-                <p className={styles.description}>{description}</p>
-                <h3 className={styles.title2}>We work with manufacturers in our industry</h3>
+                {/* <p className={styles.description}>{description}</p> */}
+                <h3 className={locksmithStyles.title2}>We work with manufacturers in our industry</h3>
                 <div className={manufacturersStyles['grid-container']}>
                     {
                         manufacturers.map((image, index) => <div>
@@ -215,7 +195,7 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                     }
                 </div>
             </div>
-        </Layout>
+        </Layout >
     )
 }
 
