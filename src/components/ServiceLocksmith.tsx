@@ -13,21 +13,39 @@ import locksmithSubCategoryStyles from "../styles/locksmithSubCategory.module.cs
 import residentialLocksmith from '@/data/residentialLocksmith';
 import commercialLocksmith from '@/data/commercialLocksmith';
 
+interface MetaTags {
+    page: string,
+    title: string,
+    description: string,
+    'og:type': string,
+    'og:title': string,
+    'og:description': string,
+    'og:image': string,
+    'twitter:card': string,
+}
+
 interface ServiceLocksmithProps {
     title: string | undefined;
     description: string | undefined;
     image: string | undefined;
+    metaTags?: MetaTags | undefined; // Зроблено властивість metaTags необов'язковою
 }
 
-const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description, image }) => {
+const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description, image, metaTags }) => {
     return (
         <Layout>
             <Head>
-                <title>LOCKSMITH SERVICES</title>
+                <title>{metaTags?.title || title}</title>
                 <meta
                     name="description"
-                    content="Короткий опис вашої сторінки, який підсумовує її зміст."
+                    content={metaTags?.description || description}
                 />
+                <meta property="og:type" content={metaTags?.['og:type'] || ''} />
+                <meta property="og:title" content={metaTags?.title || title} />
+                <meta property="og:description" content={metaTags?.description || description} />
+                <meta property="og:image" content= {metaTags?.['og:image'] || image}/>
+                <meta name="image" content={metaTags?.['og:image'] || image}></meta>
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <div className={styles.wrapper}>
                 <div className={locksmithStyles.logo}>

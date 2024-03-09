@@ -7,21 +7,39 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 
+interface MetaTags {
+    page: string,
+    title: string,
+    description: string,
+    'og:type': string,
+    'og:title': string,
+    'og:description': string,
+    'og:image': string,
+    'twitter:card': string,
+}
+
 interface ServiceTemplateProps {
     title: string | undefined;
     description: string | undefined;
     image: string | undefined;
+    metaTags: MetaTags | undefined;
 }
 
-const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, image }) => {
+const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, image, metaTags }) => {
     return (
         <Layout>
             <Head>
-                {title}
+                <title>{metaTags?.title || ''}</title>
                 <meta
                     name="description"
-                    content="Короткий опис вашої сторінки, який підсумовує її зміст."
+                    content={metaTags?.description || ''}
                 />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={metaTags?.title || ''} />
+                <meta property="og:description" content={metaTags?.description || ''} />
+                <meta property="og:image" content={image} />
+                <meta name="image" content={image}></meta>
+                <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <div className={styles.wrapper}>
                 {/* <div className={styles.imageWrapper}>
@@ -42,7 +60,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                 </div> */}
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>
-                <h2  className={styles.title}>Lorem ipsum dolor sit</h2>
+                <h2 className={styles.title}>Lorem ipsum dolor sit</h2>
                 <p className={styles.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo sit dicta. Facere blanditiis quam eius molestiae consectetur doloremque voluptates perspiciatis veniam accusantium repellendus, iste culpa assumenda magnam maiores voluptatibus.</p>
                 <div>
                     <Swiper
