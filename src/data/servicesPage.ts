@@ -26,7 +26,7 @@ const servicesPage: Service[] = [
         image: "/services/Commercial Door Repair.jpg"
     },
     {
-        title: "Fire-Rated Wood Doors",
+        title: "Garage Doors",
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
         image: "/services/Fire-Rated Wood Doors.jpg"
     },
@@ -39,6 +39,16 @@ const servicesPage: Service[] = [
         title: "Metal FireRated Doors",
         description: "Fire-rated doors play a major role in reducing damage caused by fire. These doors provide maximum safety to a property when fires occur. Not all fire-rated doors are created equal.",
         image: "/services/Metal FireRated Doors.jpg"
+    },
+    {
+        title: "Front Entry Doors",
+        description: "Front Entry Doors description.",
+        image: "/services/Front Entry Doors.jpg"
+    },
+    {
+        title: "Emergency Lockout",
+        description: "Emergency Lockout description",
+        image: "/services/Emergency Lockout.jpg"
     },
 ]
 

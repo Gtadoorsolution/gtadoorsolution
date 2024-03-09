@@ -12,7 +12,7 @@ export default function Services() {
                 <title>Locksmith</title>
                 <meta
                     name="description"
-                    content="Короткий опис вашої сторінки, який підсумовує її зміст."
+                    content="description"
                 />
             </Head>
             <p className={styles.title2}>PREMIUM QUALITY</p>

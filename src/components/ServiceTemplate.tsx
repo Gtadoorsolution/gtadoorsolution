@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from '../styles/page.module.css'
 import Head from 'next/head';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 
 interface MetaTags {
@@ -60,12 +60,13 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                 </div> */}
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.description}>{description}</p>
-                <h2 className={styles.title}>Lorem ipsum dolor sit</h2>
+                <h2>Lorem ipsum dolor sit</h2>
                 <p className={styles.description}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At explicabo sit dicta. Facere blanditiis quam eius molestiae consectetur doloremque voluptates perspiciatis veniam accusantium repellendus, iste culpa assumenda magnam maiores voluptatibus.</p>
                 <div>
                     <Swiper
                         style={{ paddingBottom: 40 }}
-                        modules={[Pagination, Scrollbar, A11y]}
+                        modules={[Pagination, Scrollbar, A11y, Navigation]}
+                        navigation
                         spaceBetween={0}
                         pagination={{ clickable: true }}
                         breakpoints={{
