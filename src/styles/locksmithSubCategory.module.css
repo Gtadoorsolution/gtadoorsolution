@@ -11,7 +11,7 @@
 .image-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Фіксоване співвідношення сторін 16:9 (9 / 16 * 100) */
+    padding-top: 56.25%;
     padding-bottom: 15%;
 }
 
@@ -21,18 +21,22 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Зберегти співвідношення сторін без деформацій */
+    object-fit: cover;
 }
 
 .title {
     font-weight: bold;
 }
 
+.title2 {
+    font-weight: bold;
+    text-align: center;
+}
+
 .description {}
 
-@media only screen  and (max-width: 920px) {
+@media only screen and (max-width: 920px) {
     .wrapper>* {
         flex-basis: calc(100%);
-        /* margin: 0.5rem; */
     }
 }

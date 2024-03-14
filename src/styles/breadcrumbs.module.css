@@ -1,0 +1,35 @@
+.nav {
+    margin-bottom: 10px;
+    /* Додайте зазор знизу */
+}
+
+.breadcrumbs-list {
+    list-style-type: none;
+    /* Вимкніть маркери списку */
+    padding: 0 10px;
+    /* Вимкніть відступи */
+    display: flex;
+    color: rgb(136, 136, 136);
+    /* Використовуйте flexbox для розміщення крошок в ряд */
+}
+
+.breadcrumb-item {
+    margin-right: 5px;
+    /* Додайте зазор між крошками */
+}
+
+.breadcrumb-item::after {
+    content: ">";
+    margin-left: 15px;
+    color: rgb(136, 136, 136);
+    /* Відступ від тексту */
+}
+
+.breadcrumb-item:last-child {
+    margin-right: 0;
+    color: black;
+}
+
+.breadcrumb-item:last-child:hover {
+    color: rgb(255, 0, 0);
+}
