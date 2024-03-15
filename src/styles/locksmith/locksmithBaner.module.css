@@ -1,0 +1,52 @@
+.logoContainer {
+    position: relative;
+    width: 100%;
+    padding-top: 26%; /* Визначає висоту контейнера, можна налаштувати під свої потреби */
+    background-color: #303030;
+    overflow: hidden; /* Забезпечує, що зображення не виходить за межі контейнера */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Затемнення фону */
+    z-index: 1; /* Вище зображення, але нижче тексту */
+}
+
+.logoText {
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 2; /* Гарантує, що текст буде над затемненням і зображенням */
+    opacity: 1;
+}
+
+@media (max-width: 601px) {
+    .logoContainer {
+        top: 0px;
+        margin-bottom: 30px;
+        padding-top: 40%;
+    }
+
+    .logoText {
+        top: 50%;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 851px) {
+    .logoContainer {
+        padding-top: 50%;
+    }
+
+    .logoText {
+        top: 60%;
+    }
+}

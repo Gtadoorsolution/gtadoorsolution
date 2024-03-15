@@ -11,30 +11,6 @@
     padding: 15px 0;
 }
 
-.logo {
-    background-image: url(https://www.mr-locks.com/wp-content/uploads/tech-installing-a-lock.jpg);
-    position: relative;
-    /* display: table; */
-    width: 100%;
-    padding-top: 26%;
-    background-color: #303030;
-    /* background-position: center center; */
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* box-sizing: border-box; */
-}
-
-.logoText {
-    color: white;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-}
-
 .textWrapper {
     flex: 2;
 }
@@ -46,7 +22,6 @@
 }
 
 .sliderWrapper {
-    /* flex: 0; */
     width: 50%;
     padding-bottom: 40px;
     padding-top: 40px;
@@ -79,19 +54,6 @@
         flex: 1;
         width: 100%;
     }
-
-    /* .textBolt {
-        font-size: 2vw;
-        font-weight: bold;
-        padding-bottom: 40px;
-        line-height: 30px;
-    }
-
-    .text {
-        font-size: 2vw;
-        padding-bottom: 40px;
-        line-height: 30px;
-    } */
 
     .title2 {
         font-size: 3.3vw;

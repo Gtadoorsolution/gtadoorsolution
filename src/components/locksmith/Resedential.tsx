@@ -13,7 +13,10 @@ import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip'
 export default function Resedential() {
     return (
         <div>
-            <LocksmithLogo title={'Residential locksmith'}/>
+            <LocksmithLogo
+                title={'Residential locksmith'}
+                image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
+            />
             {/* <h2 className={locksmithStyles.headerTitle}>Residential locksmith</h2> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
@@ -77,7 +80,7 @@ export default function Resedential() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <LoksmithSubCategoryStrip/>
+                <LoksmithSubCategoryStrip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         residentialLocksmith.map((category, index) => <div

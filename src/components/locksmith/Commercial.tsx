@@ -13,7 +13,7 @@ import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip';
 export default function Commercial() {
     return (
         <div>
-            <LocksmithLogo title={"Commercial locksmith"}/>
+            <LocksmithLogo title={"Commercial locksmith"} image='/default-ui.webp'/>
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
