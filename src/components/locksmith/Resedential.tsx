@@ -6,11 +6,16 @@ import locksmithStyles from "../../styles/locksmithServises.module.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
+import LocksmithLogo from './LocksmithLogo'
+import Breadcrumbs from '../Breadcrumbs'
+import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip'
 
 export default function Resedential() {
     return (
         <div>
-            <h2 className={locksmithStyles.headerTitle}>Residential locksmith</h2>
+            <LocksmithLogo title={'Residential locksmith'}/>
+            {/* <h2 className={locksmithStyles.headerTitle}>Residential locksmith</h2> */}
+            <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
                 <div className={locksmithStyles.textWrapper}>
                     <p className={locksmithStyles.textBolt}>Locked out of your home? Need to rekey your lock or install a new one? Doorsolution Locksmith is here to help with all your residential locksmith needs in the Greater Toronto Area (GTA). </p>
@@ -72,6 +77,7 @@ export default function Resedential() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
+                <LoksmithSubCategoryStrip/>
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         residentialLocksmith.map((category, index) => <div

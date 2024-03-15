@@ -1,0 +1,15 @@
+.strip {
+    display: flex;
+    align-items: center;
+    /* Вирівнювання тексту по вертикалі по центру */
+    background-color: black;
+    height: 70px;
+    margin-bottom: 55px;
+}
+
+.text {
+    color: white;
+    font-size: 25px;
+    padding-left: 25px;
+    /* Додаткові стилі за потреби */
+}

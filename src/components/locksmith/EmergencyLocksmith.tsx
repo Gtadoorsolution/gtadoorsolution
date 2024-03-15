@@ -8,12 +8,11 @@ import commercialLocksmith from '@/data/commercialLocksmith';
 import locksmithSubCategoryStyles from "../../styles/locksmithSubCategory.module.css"
 import LocksmithLogo from './LocksmithLogo';
 import Breadcrumbs from '../Breadcrumbs';
-import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip';
 
-export default function Commercial() {
+export default function EmergencyLocksmith() {
     return (
         <div>
-            <LocksmithLogo title={"Commercial locksmith"}/>
+            <LocksmithLogo title={"Emergency Locksmith"} />
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
@@ -91,7 +90,6 @@ export default function Commercial() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <LoksmithSubCategoryStrip/>
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         commercialLocksmith.map((category, index) => <div

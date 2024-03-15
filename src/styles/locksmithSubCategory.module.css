@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
 .wrapper>* {
@@ -26,6 +27,9 @@
 
 .title {
     font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 8px;
+    text-align: center;
 }
 
 .title2 {
@@ -33,10 +37,24 @@
     text-align: center;
 }
 
-.description {}
+.description {
+    font-size: 20px;
+}
 
 @media only screen and (max-width: 920px) {
     .wrapper>* {
         flex-basis: calc(100%);
+    }
+    .title {
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 8px;
+        text-align: center;
+    }
+    
+    
+    .description {
+        font-size: 18px;
+        text-align: center;
     }
 }

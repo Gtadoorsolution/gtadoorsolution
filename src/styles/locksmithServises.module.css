@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 30px
 }
 
 .title2 {
-    /* text-align: center; */
     font-size: 1.6vw;
     padding: 15px 0;
 }
@@ -42,6 +42,7 @@
 .headerTitle {
     font-size: 3.0vw;
     padding: 25px 0;
+    text-align: center;
 }
 
 .sliderWrapper {
@@ -53,14 +54,16 @@
 }
 
 .textBolt {
-    font-size: 1.4vw;
+    font-size: 26px;
     font-weight: bold;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .text {
-    font-size: 1.2vw;
+    font-size: 26px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 @media (max-width: 1500px) {
@@ -77,7 +80,7 @@
         width: 100%;
     }
 
-    .textBolt {
+    /* .textBolt {
         font-size: 2vw;
         font-weight: bold;
         padding-bottom: 40px;
@@ -88,7 +91,7 @@
         font-size: 2vw;
         padding-bottom: 40px;
         line-height: 30px;
-    }
+    } */
 
     .title2 {
         font-size: 3.3vw;
