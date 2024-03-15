@@ -22,7 +22,7 @@
 }
 
 .sliderWrapper {
-    width: 50%;
+    width: 70%;
     padding-bottom: 40px;
     padding-top: 40px;
     align-self: center;
@@ -33,12 +33,14 @@
     font-weight: bold;
     padding-bottom: 10px;
     text-align: center;
+    margin: 0 12%;
 }
 
 .text {
     font-size: 26px;
     padding-bottom: 10px;
     text-align: center;
+    margin: 0 12%;
 }
 
 @media (max-width: 1500px) {
@@ -59,6 +61,14 @@
         font-size: 3.3vw;
         line-height: 50px;
     }
+
+    .textBolt {
+        margin: 15px 0;
+    }
+
+    .text {
+        margin: 15px 0;
+    }
 }
 
 @media only screen and (min-width: 150px) and (max-width: 601px) {
@@ -66,12 +76,14 @@
         padding: 0 10px;
         line-height: 33px;
         font-size: 4vw;
+        margin: 15px 0;
     }
 
     .text {
         padding: 0 10px;
         line-height: 33px;
         font-size: 4vw;
+        margin: 15px 0;
     }
 
     .title2 {
