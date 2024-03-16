@@ -43,7 +43,7 @@ export default function NavBar() {
                 <div className={styles.navbar}>
                     <div className={styles.logo}>
                         <Link href="/" aria-label="Home">
-                            <svg style={{display: "block", margin: 0, padding:0, border: 0}} width="100" height="60" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                            <svg style={{ display: "block", margin: 0, padding: 0, border: 0 }} width="100" height="60" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
                                 <text x="50%" y="65%" fontFamily="Verdana" fontSize="120" fill="white" textAnchor="middle" alignmentBaseline="middle">DS</text>
                             </svg>
                         </Link>
@@ -55,11 +55,11 @@ export default function NavBar() {
                     </div>
                     <ul className={styles.menuPC}>
                         <li><Link href="/">Home</Link></li>
-                        <li style={{borderBottom: "solid 1px grey"}}>
+                        <li style={{ borderBottom: "solid 1px grey" }}>
                             <span onClick={handleMenuToggleDesktop}>Services</span>
                             {isMenuOpenDesktop && (
                                 <ul className={`${styles.submenuDesctop} ${isMenuOpenDesktop && styles.open}`}>
-                                    {servicesList.map(service => <li>
+                                    {servicesList.map((service, index) => <li key={index}>
                                         <Link href={service.link}>
                                             <div>
                                                 <Image
@@ -73,7 +73,6 @@ export default function NavBar() {
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                                                    // layout="responsive"
                                                     priority={true}
                                                     placeholder="blur"
                                                     blurDataURL="/default-ui.webp"
@@ -96,10 +95,10 @@ export default function NavBar() {
                                     <a href="#">Home</a>
                                 </li>
                                 <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
-                                    <a href="#">About</a>
+                                    <Link href="/about">About</Link>
                                 </li>
                                 <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
-                                    <a href="#">Contact</a>
+                                    <Link href="/contact">Contact</Link>
                                 </li>
                                 <li className={styles.menuItem}>
                                     <span onClick={handleMenuToggleMobile}>Services</span>

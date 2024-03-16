@@ -30,16 +30,20 @@ export default function Footer() {
                     </h2>
                     <ul>
                         <li className={styles.service}><Link href="/">Home</Link></li>
-                        <li className={styles.service}><Link href="#">Services</Link></li>
-                        <li className={styles.service}><Link href="about">About</Link></li>
-                        <li className={styles.service}><Link href="contact">Contact</Link></li>
+                        <li className={styles.service}><Link href="/about">About</Link></li>
+                        <li className={styles.service}><Link href="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div
                     className={styles.card}>
-                    <h2>Newsletter</h2>
-                    <p>Enter Your Emaile Adress</p>
-                    <p>I agree to the Privacy Policy</p>
+                    <h2>
+                        Locksmith Services
+                    </h2>
+                    <ul>
+                        <li className={styles.service}><Link href="/services/locksmith-services/residential">Residential</Link></li>
+                        <li className={styles.service}><Link href="/services/locksmith-services/commercial">Commercial</Link></li>
+                        <li className={styles.service}><Link href="/services/locksmith-services/commercial">Emergency</Link></li>
+                    </ul>
                 </div>
             </div>
             <UnderFooter />
