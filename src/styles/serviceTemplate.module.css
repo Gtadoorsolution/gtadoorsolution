@@ -1,0 +1,54 @@
+/*ServiceTemplate.module.css*/
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 1.5;
+    /* Займає 2/3 ширини контейнера */
+    /* padding: 20px; */
+    /* Додатковий відступ для контенту зліва */
+}
+
+.slider{
+    width: 50vw;
+    padding-bottom: 40px;
+}
+
+.form {
+    /* flex: 1.5; */
+    /* Займає 1/3 ширини контейнера */
+    /* padding: 20px; */
+    /* Додатковий відступ для форми зправа */
+}
+
+.image {
+    margin-bottom: 25px;
+}
+
+.title{
+    margin-bottom: 25px;
+}
+
+.title2{
+    margin-bottom: 10px;
+}
+
+.text{
+    color: #83878d;
+    margin-bottom: 20px;
+}
+
+.video{
+    width: 10px;
+}
+
+@media (max-width: 960px) {
+    .container {
+        display: block;
+    }
+    .slider{
+        width: 100%;
+    }
+}

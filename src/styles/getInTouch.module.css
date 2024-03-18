@@ -1,0 +1,151 @@
+/*getInTouch.module.css*/
+
+.wrapper {
+    background-color: rgb(252, 248, 236);
+    padding: 25px;
+}
+
+.formWrap {
+    width: 100%;
+}
+
+.inputWrap {
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputLable {
+    padding-right: 10px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #edc701;
+    padding: 13px 40px 13px 30px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.button .name {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #bb9c00;
+}
+
+.contactWrap {
+    list-style: none;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.contact {
+    color: #83827f;
+    font-size: 15px;
+    line-height: 27px;
+    display: flex;
+    /* Включаємо flexbox */
+    align-items: center;
+    /* Центруємо елементи по вертикалі */
+    gap: 8px;
+    /* Встановлюємо відступ між елементами flex-контейнера */
+    margin-bottom: 10px;
+}
+
+/* Загальні стилі для всіх input */
+.input {
+    padding: 8px;
+    border: none;
+    /* Видаляємо горизонтальний бордер */
+    border-bottom: 2px solid rgb(184, 184, 184);
+    /* Додаємо підкреслення знизу */
+    /* border-radius: 4px; */
+    font-size: 16px;
+    background-color: rgb(252, 248, 236);
+}
+
+/* Стилі для конкретного типу input */
+.input[type="text"] {
+    /* Стилі для текстових полів */
+}
+
+.input[type="email"] {
+    /* Стилі для поля вводу email */
+}
+
+.input[type="password"] {
+    /* Стилі для поля вводу пароля */
+}
+
+/* Стилі для input у фокусі */
+.input:focus {
+    outline: none;
+    /* Видалити рамку при фокусі */
+    border-color: rgb(0, 0, 0);
+    /* Змінити колір рамки при фокусі */
+}
+
+/* Стилі для валідних і невалідних input */
+.input:valid {
+    /* Стилі для валідних input */
+}
+
+.input:invalid {
+    /* Стилі для невалідних input */
+}
+
+.input::after {
+    content: '';
+    /* Додаємо контент, щоб підкреслення мало розмір */
+    position: absolute;
+    /* Позиціонуємо підкреслення відносно .input */
+    bottom: 0;
+    /* Встановлюємо відстань від низу */
+    left: 0;
+    /* Встановлюємо позицію зліва */
+    width: 100%;
+    /* Займає всю ширину .input */
+    height: 2px;
+    /* Встановлюємо товщину підкреслення */
+    background-color: dodgerblue;
+    /* Колір підкреслення */
+}
+
+/* @media (max-width: 960px) {
+    .wrapper {
+        align-items: center;
+        margin: 0 25%;
+    }
+
+    .formWrap {
+        width: 100%;
+    }
+} */
+
+@media (max-width: 960px) {
+    .wrapper {
+        margin: 0 auto;
+        /* Центрує блок на сторінці */
+        padding: 20px;
+        /* Додає відступи з усіх боків */
+        max-width: 100%;
+        /* Дозволяє блоку займати весь доступний горизонтальний простір */
+    }
+
+    .formWrap {
+        /* Тут можна додатково налаштувати стилі форми, якщо потрібно */
+    }
+
+
+    /* Можете додати стилі для кнопки, якщо потрібно */
+
+    /* Адаптуйте інші елементи за необхідності */
+}

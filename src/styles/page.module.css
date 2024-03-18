@@ -1,17 +1,10 @@
-.wrapper {
+/* .wrapper {
     padding: 0px 0;
 }
 
 .imageWrapper {
     padding: 0 20%;
     padding-top: 70px;
-}
-
-.image {
-    /* position: absolute; */
-    /* padding-top: 10px; */
-    /* max-width: 50vw; */
-    /* max-height: 50vw; */
 }
 
 .title {
@@ -45,4 +38,11 @@
     .imageWrapper {
         padding-top: 120px;
     }
+} */
+
+.image {
+    /* position: absolute; */
+    /* padding-top: 10px; */
+    /* max-width: 50vw; */
+    /* max-height: 50vw; */
 }
