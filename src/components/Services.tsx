@@ -27,13 +27,15 @@ export default function Services() {
                                         className={styles.image}
                                         src={service.image}
                                         alt={service.title}
-                                        fill
+                                        // fill
+                                        width={"250"}
+                                        height={"250"}
                                         sizes="
                                         (max-width: 640px) 100vw,
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                                        // layout="responsive"
+                                        layout="responsive"
                                         priority={true}
                                         placeholder="blur"
                                         blurDataURL="/default-ui.webp"

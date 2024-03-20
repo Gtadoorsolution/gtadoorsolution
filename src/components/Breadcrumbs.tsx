@@ -8,7 +8,7 @@ const Breadcrumbs = () => {
 
     return (
         <nav className={breadcrumbsStyles.nav}>
-            <ul className={breadcrumbsStyles["breadcrumbs-list"]}>
+            <ol className={breadcrumbsStyles["breadcrumbs-list"]}>
                 <li>
                     <Link className={breadcrumbsStyles["breadcrumb-item"]} href="/">
                         Home
@@ -32,7 +32,7 @@ const Breadcrumbs = () => {
                         </li>
                     );
                 })}
-            </ul>
+            </ol>
         </nav>
     );
 };

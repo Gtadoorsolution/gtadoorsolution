@@ -1,7 +1,7 @@
 /*getInTouch.module.css*/
 
 .wrapper {
-    background-color: rgb(252, 248, 236);
+    /* background-color: rgb(252, 248, 236); */
     padding: 25px;
 }
 
@@ -69,7 +69,7 @@
     /* Додаємо підкреслення знизу */
     /* border-radius: 4px; */
     font-size: 16px;
-    background-color: rgb(252, 248, 236);
+    /* background-color: rgb(252, 248, 236); */
 }
 
 /* Стилі для конкретного типу input */
@@ -133,19 +133,30 @@
 @media (max-width: 960px) {
     .wrapper {
         margin: 0 auto;
-        /* Центрує блок на сторінці */
-        padding: 20px;
-        /* Додає відступи з усіх боків */
-        max-width: 100%;
-        /* Дозволяє блоку займати весь доступний горизонтальний простір */
+        display: flex;
+        align-items: center;
     }
 
     .formWrap {
-        /* Тут можна додатково налаштувати стилі форми, якщо потрібно */
+        margin-right: 45px;
+        width: 100%;
+        padding: 0px;
     }
 
-
+    .contact {
+        margin-right: 110px;
+        width: 100%;
+    /* Включаємо flexbox */
+    /* Центруємо елементи по вертикалі */
+    /* Встановлюємо відступ між елементами flex-контейнера */
+    }
     /* Можете додати стилі для кнопки, якщо потрібно */
 
     /* Адаптуйте інші елементи за необхідності */
+}
+
+@media (max-width: 721px) {
+    .wrapper {
+        display: block;
+    }
 }

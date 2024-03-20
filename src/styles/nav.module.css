@@ -92,6 +92,8 @@
         z-index: 3;
         width: 100%;
         top: 40px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
     }
 
     .menuPC {

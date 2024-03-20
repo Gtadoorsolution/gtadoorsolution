@@ -28,7 +28,7 @@ const servicesPage: Service[] = [
     {
         title: "Garage Doors",
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
-        image: "/services/Fire-Rated Wood Doors.jpg"
+        image: "/services/garage-doors.jpg"
     },
     {
         title: "Locksmith Services",
