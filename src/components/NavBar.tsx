@@ -4,6 +4,7 @@ import Image from 'next/image';
 import HeaderContacts from './HeaderContacts';
 import Link from 'next/link';
 import servicesList from '@/data/servicesList';
+import contacts from '@/data/contacts';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,6 +49,13 @@ export default function NavBar() {
                             </svg>
                         </Link>
                     </div>
+                    <div className={styles.phone}>
+                        <a href={`tel:${contacts.telNumber}`} className={styles.li}>
+                            <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="black" />
+                            </svg>
+                        </a>
+                    </div>
                     <div className={styles.burger} onClick={handleMenuToggle}>
                         <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
                         <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
@@ -87,6 +95,13 @@ export default function NavBar() {
                         </li>
                         <li><Link href="/about">About</Link></li>
                         <li><Link href="/contact">Contact</Link></li>
+                        <li>
+                            <a href={`tel:${contacts.telNumber}`} className={styles.li}>
+                                <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="black" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                     {isMenuOpen && (
                         <div className={styles.dropdown}>

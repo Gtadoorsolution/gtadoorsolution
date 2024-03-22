@@ -4,9 +4,12 @@
     background-color: #edc701;
     list-style: none;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* Internet Explorer/Edge */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
 }
 
 .logo {
@@ -25,7 +28,7 @@
 }
 
 .menuPC li {
-    margin: 22px 0;
+    margin: 15px 0;
     margin-right: 10px;
 }
 
@@ -82,6 +85,10 @@
 .submenuDesctop li:hover {
     background-color: #ddd;
     z-index: 5;
+}
+
+.phone {
+    display: none;
 }
 
 @media (max-width: 850px) {
@@ -148,6 +155,16 @@
 
     .dropdown {
         top: 60px;
+    }
+
+    .phone {
+        display: block;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
     }
 }
 
