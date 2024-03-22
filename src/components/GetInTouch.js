@@ -93,8 +93,7 @@ const GetInTouch = () => {
                         value={values.message}
                         onChange={handleChange}
                         onBlur={onBlur}
-                        placeholder={values.subject ? "" : "\nAdditional\nMessage"}
-                        required
+                        placeholder={values.message ? "" : "\nAdditional Message\n(Not Required)"}
                     ></textarea>
                     <div>
                         <button
