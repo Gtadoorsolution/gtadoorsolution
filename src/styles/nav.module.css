@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #f0f0f0;
+    background-color: #edc701;
     list-style: none;
     user-select: none;
     -webkit-user-select: none; /* Safari */
@@ -91,7 +91,7 @@
         position: fixed;
         z-index: 3;
         width: 100%;
-        top: 40px;
+        top: 33px;
         padding-bottom: 5px;
         margin-bottom: 15px;
     }
