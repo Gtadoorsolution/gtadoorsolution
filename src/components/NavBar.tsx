@@ -63,7 +63,7 @@ export default function NavBar() {
                     </div>
                     <ul className={styles.menuPC}>
                         <li><Link href="/">Home</Link></li>
-                        <li style={{ borderBottom: "solid 1px grey" }}>
+                        <li>
                             <span onClick={handleMenuToggleDesktop}>Services</span>
                             {isMenuOpenDesktop && (
                                 <ul className={`${styles.submenuDesctop} ${isMenuOpenDesktop && styles.open}`}>
