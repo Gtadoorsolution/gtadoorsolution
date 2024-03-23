@@ -4,9 +4,11 @@
     /* background-color: rgb(252, 248, 236); */
     padding: 25px;
     position: fixed;
-    right: 0; /* Закріпити справа */
-    top: 100px; /* Задайте відстань від верху, яка вам потрібна */
-    width: 350px; /* Задайте ширину */
+    right: 280px;
+    /* Закріпити справа */
+    top: 100px;
+    /* Задайте відстань від верху, яка вам потрібна */
+    width: 350px;
 }
 
 .formWrap {
@@ -134,13 +136,67 @@
     }
 } */
 
-@media (max-width: 960px) {
+@media (max-width: 1800px) {
     .wrapper {
         margin: 0 auto;
-        display: flex;
+        /* display: flex; */
         align-items: center;
+        /* bottom: 0px; */
+        right: 200px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .wrapper {
+        margin: 0 auto;
+        /* display: flex; */
+        align-items: center;
+        /* bottom: 0px; */
+        right: 200px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper {
+        margin: 0 auto;
+        /* display: flex; */
+        align-items: center;
+        /* bottom: 0px; */
+        right: 100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        margin: 0 auto;
+        /* display: flex; */
+        align-items: center;
+        /* bottom: 0px; */
+        right: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .wrapper {
+        margin: 0 auto;
+        /* display: flex; */
+        align-items: center;
+        /* bottom: 0px; */
+        right: 0px;
+    }
+}
+
+@media (max-width: 960px) {
+    .wrapper {
+        display: flex;
         position: sticky;
-        bottom: 0px;
+        /* background-color: rgb(252, 248, 236); */
+        padding: 0px;
+        right: 0px;
+        /* Закріпити справа */
+        top: 0px;
+        /* Задайте відстань від верху, яка вам потрібна */
+        width: 450px;
     }
 
     .formWrap {
@@ -152,10 +208,11 @@
     .contact {
         margin-right: 110px;
         width: 100%;
-    /* Включаємо flexbox */
-    /* Центруємо елементи по вертикалі */
-    /* Встановлюємо відступ між елементами flex-контейнера */
+        /* Включаємо flexbox */
+        /* Центруємо елементи по вертикалі */
+        /* Встановлюємо відступ між елементами flex-контейнера */
     }
+
     /* Можете додати стилі для кнопки, якщо потрібно */
 
     /* Адаптуйте інші елементи за необхідності */
@@ -165,6 +222,7 @@
     .wrapper {
         display: block;
         position: sticky;
-        bottom: 0px;
+        padding-bottom: 30px;
+        width: 350px;
     }
 }

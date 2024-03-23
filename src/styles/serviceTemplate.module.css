@@ -1,19 +1,19 @@
 /*ServiceTemplate.module.css*/
 
 .container {
-    display: flex;
+    /* display: flex; */
     padding-right: 320px;
 }
 
 .sidebar {
-    flex: 1.5;
+    flex: 1.7;
     /* Займає 2/3 ширини контейнера */
     /* padding: 20px; */
     /* Додатковий відступ для контенту зліва */
 }
 
 .slider{
-    width: 50vw;
+    width: 40vw;
     padding-bottom: 40px;
 }
 

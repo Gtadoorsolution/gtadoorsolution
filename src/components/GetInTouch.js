@@ -45,7 +45,7 @@ const GetInTouch = () => {
         }
     };
     return (
-        <div className={getInTouchStyles.wrapper} style={{ maxWidth: "450px", marginTop: "12px" }}>
+        <div className={getInTouchStyles.wrapper} >
             <div>
                 <p className={getInTouchStyles.title}>Get in Touch</p>
                 {error && (

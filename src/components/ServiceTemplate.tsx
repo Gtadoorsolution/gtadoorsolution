@@ -84,7 +84,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                 slidesPerView: 2,
                             },
                             1200: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                             },
                         }}
                         loop={true}
@@ -169,6 +169,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                     />
                     <p className={serviceTemplateStyles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe voluptas itaque fuga accusamus sed natus, voluptate facere. Quas voluptatum facilis culpa aspernatur perferendis veritatis cumque pariatur minima excepturi vero?</p>
                 </div>
+                <div className={serviceTemplateStyles.sidebar}></div>
                 <GetInTouch />
             </div>
         </Layout>
