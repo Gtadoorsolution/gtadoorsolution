@@ -3,6 +3,7 @@ import styles from '../styles/nav.module.css';
 import Image from 'next/image';
 import HeaderContacts from './HeaderContacts';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import servicesList from '@/data/servicesList';
 import contacts from '@/data/contacts';
 
@@ -10,7 +11,7 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isMenuOpenDesktop, setIsMenuOpenDesktop] = useState(false); // Стан для ПК версії
     const [isMenuOpenMobile, setIsMenuOpenMobile] = useState(false); // Стан для мобільної версії
-
+    const router = useRouter();
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -37,6 +38,8 @@ export default function NavBar() {
         };
     }, []);
 
+
+
     return (
         <nav>
             <div>
@@ -57,9 +60,9 @@ export default function NavBar() {
                         </a>
                     </div>
                     <div className={styles.burger} onClick={handleMenuToggle}>
-                        <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
-                        <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
-                        <div className={isMenuOpen ? styles.burgerLineOpen : styles.burgerLine}></div>
+                        <div className={isMenuOpen ? styles.burgerLineClose : styles.burgerLine}></div>
+                        <div className={isMenuOpen ? "" : styles.burgerLine}></div>
+                        <div className={isMenuOpen ? styles.burgerLineClose : styles.burgerLine}></div>
                     </div>
                     <ul className={styles.menuPC}>
                         <li><Link href="/">Home</Link></li>
@@ -106,24 +109,31 @@ export default function NavBar() {
                     {isMenuOpen && (
                         <div className={styles.dropdown}>
                             <ul className={styles.menu}>
-                                <li className={styles.menuItem}>
-                                    <a href="#">Home</a>
+                                <li className={router.pathname === '/' ? styles.uHere : styles.menuItem}>
+                                    <a href="/">Home</a>
                                 </li>
-                                <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
+                                <li className={`${router.pathname === '/about' ? styles.uHere : styles.menuItem}`}>
                                     <Link href="/about">About</Link>
                                 </li>
-                                <li className={`${styles.menuItem} ${isMenuOpenMobile && styles.open}`}>
+                                <li className={`${router.pathname === '/contact' ? styles.uHere : styles.menuItem}`}>
                                     <Link href="/contact">Contact</Link>
                                 </li>
                                 <li className={styles.menuItem}>
                                     <span onClick={handleMenuToggleMobile}>Services</span>
                                     {isMenuOpenMobile && (
                                         <ul className={`${styles.submenuMobile} ${isMenuOpenMobile && styles.open}`}>
-                                            {servicesList.map(service => <li>
-                                                <Link href={service.link}>
-                                                    <p>{service.title}</p>
-                                                </Link>
-                                            </li>)}
+                                            {servicesList.map(service => {
+                                                // Цей виклик console.log() виконується для кожного елемента у servicesList
+                                                // перед тим, як повертати JSX для цього елемента.
+                                                console.log(router.pathname, service.link);
+                                                return (
+                                                    <li className={router.pathname === service.link ? styles.uHere : styles.menuItem}>
+                                                        <Link href={service.link}>
+                                                            <p>{service.title}</p>
+                                                        </Link>
+                                                    </li>
+                                                );
+                                            })}
                                         </ul>
                                     )}
                                 </li>
