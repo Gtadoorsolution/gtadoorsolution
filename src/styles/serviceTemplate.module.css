@@ -3,6 +3,7 @@
 .container {
     /* display: flex; */
     padding-right: 320px;
+    padding-top: 30px;
 }
 
 .sidebar {
@@ -12,7 +13,7 @@
     /* Додатковий відступ для контенту зліва */
 }
 
-.slider{
+.slider {
     width: 40vw;
     padding-bottom: 40px;
 }
@@ -25,32 +26,55 @@
 }
 
 .image {
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+
+.title {
     margin-bottom: 25px;
 }
 
-.title{
-    margin-bottom: 25px;
-}
-
-.title2{
+.title2 {
     margin-bottom: 10px;
 }
 
-.text{
+.text {
     color: #83878d;
     margin-bottom: 20px;
 }
 
-.video{
+.video {
     width: 10px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
     .container {
         display: block;
         padding-right: 0px;
+        padding: 0 20px;
+        padding-top: 50px;
     }
-    .slider{
+
+    .slider {
         width: 100%;
+    }
+}
+
+@media (max-width: 719px) and (max-width: 959px) {
+    .container {
+        /* display: flex; */
+        padding-right: 10px;
+        padding-top: 100px;
+    }
+
+    .image {
+        /* padding: 0px 0px; */
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        padding-top: 120px;
     }
 }
