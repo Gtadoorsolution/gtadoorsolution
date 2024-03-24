@@ -1,0 +1,33 @@
+.counterWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+}
+
+.counterContainer {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.counterLabel {
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #666;
+}
+
+@media (max-width: 719px) {
+    .counterWrapper {
+        flex-wrap: wrap;
+    }
+
+    .counterContainer {
+        flex-basis: 50%;
+    }
+}
