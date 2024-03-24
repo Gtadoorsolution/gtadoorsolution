@@ -6,7 +6,7 @@
     position: fixed;
     right: 280px;
     /* Закріпити справа */
-    top: 100px;
+    top: 130px;
     /* Задайте відстань від верху, яка вам потрібна */
     width: 350px;
 }
@@ -190,6 +190,7 @@
     .wrapper {
         display: flex;
         position: sticky;
+        align-items: stretch;
         /* background-color: rgb(252, 248, 236); */
         padding: 0px;
         right: 0px;
