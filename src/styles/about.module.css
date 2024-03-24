@@ -32,3 +32,9 @@
 
     .map {}
 }
+
+@media (max-width: 850px) {
+    .wrapper {
+        margin-top: 125px;
+    }
+}
