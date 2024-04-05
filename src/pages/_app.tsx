@@ -1,6 +1,10 @@
+// pages/_app.tsx
+
 import dynamic from 'next/dynamic'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
+import redirectMissingCustomer from '../middleware/redirectMissingCustomer';
+import { NextPageContext } from 'next';
 
 // Динамічний імпорт компонента CrispChat з виключенням SSR
 const CrispWithNoSSR = dynamic(() => import('../components/crisp'), {
@@ -8,10 +12,22 @@ const CrispWithNoSSR = dynamic(() => import('../components/crisp'), {
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <>
-    <CrispWithNoSSR />
-    <Component {...pageProps} />
-  </>
+  return (
+    <>
+      <CrispWithNoSSR />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+MyApp.getInitialProps = async ({ Component, ctx }: { Component: any, ctx: NextPageContext }) => {
+  // Викликаємо middleware для перевірки статусу сайту
+  await redirectMissingCustomer(ctx.req, ctx.res);
+
+  // Визначений компонент буде рендеритися лише якщо статус сайту не maintenance
+  const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+
+  return { pageProps };
+};
+
+export default MyApp;
