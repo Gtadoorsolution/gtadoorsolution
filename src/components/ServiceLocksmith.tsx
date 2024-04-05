@@ -43,7 +43,10 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <div className={styles.wrapper}>
-                <LocksmithLogo title={"LOCKSMITH SERVICES"} image='/default-ui.webp'/>
+                <LocksmithLogo
+                    title={'Commercial locksmith'}
+                    image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
+                />
                 <Breadcrumbs />
                 <CanTrust />
                 <LocksmithCategories />

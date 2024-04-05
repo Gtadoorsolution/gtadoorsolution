@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../../styles/locksmith/strip.module.css'
 import Link from 'next/link'
+import contacts from '@/data/contacts'
 
 export default function LoksmithSubCategoryStrip() {
     return (
@@ -11,7 +12,7 @@ export default function LoksmithSubCategoryStrip() {
                     <button className={styles.button}>Contact Us</button>
                 </Link>
                 <button className={styles.button}>
-                    <a href="tel:0000000000">000-000-0000</a>
+                    <a href={contacts.telNumber}>{contacts.telNumber}</a>
                 </button>
             </div>
         </div>

@@ -12,7 +12,10 @@ import Breadcrumbs from '../Breadcrumbs';
 export default function EmergencyLocksmith() {
     return (
         <div>
-            <LocksmithLogo title={"Emergency Locksmith"} image='/default-ui.webp'/>
+            <LocksmithLogo
+                title={'Commercial locksmith'}
+                image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
+            />
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import canTrustStyles from '../../styles/locksmith/canTrust.module.css'
+import contacts from '@/data/contacts'
 
 export default function CanTrust() {
     return (
@@ -12,7 +13,7 @@ export default function CanTrust() {
                     <button style={{ backgroundColor: "black" }} className={canTrustStyles.button}>Contact Us</button>
                 </Link>
                 <button style={{ backgroundColor: "red" }} className={canTrustStyles.button}>
-                    <a href="tel:0000000000">000-000-0000</a>
+                    <a href={contacts.telNumber}>{contacts.telNumber}</a>
                 </button>
             </div>
         </div>

@@ -22,7 +22,7 @@ const residentialLocksmith = [
     {
         image: '/services/locksmith/recedential/categories/5 LocksmithResidentialRepairSafe.jpg',
         title: 'Safe',
-        description: 'We provide an extensive selection of safes, including those designed for office or commercial use, fireproof safes, and depository safes. With our deep expertise in safes, we offer services such as safe opening, repair, and combination lock changes.',
+        description: 'With our deep expertise in safes, we offer services such as safe opening, repair, and combination lock changes.',
     },
     {
         image: '/services/locksmith/recedential/categories/6 High-Security Locks.webp',
