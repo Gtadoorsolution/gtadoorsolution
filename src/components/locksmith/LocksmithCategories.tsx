@@ -52,7 +52,7 @@ export default function LocksmithCategories() {
                     />
                     <p className={locksmithCategoriesStyles.categoryTitle}>Commercial</p>
                 </Link>
-                <Link className={locksmithCategoriesStyles.category} href="/services/locksmith-services/commercial/" aria-label="Commertial">
+                <Link className={locksmithCategoriesStyles.category} href="/services/locksmith-services/emergency/" aria-label="Commertial">
                     <Image
                         className={locksmithCategoriesStyles['image']}
                         src="/services/locksmith/emergency/Lock-change-emergency.jpg"

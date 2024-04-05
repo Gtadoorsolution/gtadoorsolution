@@ -4,25 +4,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 import Image from 'next/image';
-import commercialLocksmith from '@/data/commercialLocksmith';
+import emergencyLocksmith from '@/data/emergencyLocksmith';
 import locksmithSubCategoryStyles from "../../styles/locksmithSubCategory.module.css"
 import LocksmithLogo from './LocksmithLogo';
 import Breadcrumbs from '../Breadcrumbs';
+import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip';
 
 export default function EmergencyLocksmith() {
     return (
         <div>
             <LocksmithLogo
-                title={'Commercial locksmith'}
+                title={'Emergency Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
             />
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
                 <div className={locksmithStyles.textWrapper}>
-                    <p className={locksmithStyles.textBolt}>Mr. Locks was founded in 2003, and has since become one of New York’s leading locksmith companies. We provide commercial locksmith services to new construction projects, property management companies, real estate agencies, architects and interior designers, retail stores,  restaurants, schools, universities, medical facilities, apartment complexes, small businesses and numerous other commercial facilities around the city.</p>
-                    <p className={locksmithStyles.text}>Whether you are a business owner or responsible for a retail store, warehouse, single office, entire office building, or other commercial space in New York City, Mr. Locks can provide high-quality commercial locksmith services and security solutions according to your needs and building requirements.</p>
-                    <p className={locksmithStyles.textBolt}>We are licensed, bonded and have insurance coverage over $5 million.</p>
+                    <p className={locksmithStyles.textBolt}>Welcome to GtaDoorSolutions – Your Trusted Lockout and Lock Installation Experts!</p>
+                    <p className={locksmithStyles.textBolt}>Our services include:</p>
+                    <p className={locksmithStyles.text}>Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs. </p>
+                    <p className={locksmithStyles.textBolt}>Whether you're stranded outside your vehicle, locked out of your office during a crucial meeting, or unable to access your home or store, our team of skilled professionals is just a call away.</p>
+                    <p className={locksmithStyles.text}>We understand the urgency and inconvenience of being locked out, which is why we prioritize prompt service and efficient solutions.</p>
                 </div>
                 <div className={locksmithStyles.sliderWrapper}>
                     <Swiper
@@ -37,21 +40,7 @@ export default function EmergencyLocksmith() {
                     >
                         <SwiperSlide>
                             <Image
-                                src={"/services/locksmith/commercial/1.jpeg"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
-                                        (max-width: 640px) 100vw,
-                                        (max-width: 1024px) 50vw,
-                                        33vw
-                                        "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/services/locksmith/commercial/2.jpg"}
+                                src={"/services/locksmith/emergency/categories/1 Car lockout.jpg"}
                                 alt={"default-ui.webp"}
                                 width={600}
                                 height={419}
@@ -93,9 +82,10 @@ export default function EmergencyLocksmith() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
+                <LoksmithSubCategoryStrip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
-                        commercialLocksmith.map((category, index) => <div
+                        emergencyLocksmith.map((category, index) => <div
                             key={index}
                         >
                             <div className={locksmithSubCategoryStyles['image-container']}>
@@ -119,6 +109,6 @@ export default function EmergencyLocksmith() {
                     }
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

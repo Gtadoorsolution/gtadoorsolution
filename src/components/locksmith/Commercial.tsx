@@ -14,7 +14,7 @@ export default function Commercial() {
     return (
         <div>
             <LocksmithLogo
-                title={'Commercial locksmith'}
+                title={'Commercial Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
             />
             {/* <h3>Commercial locksmith</h3> */}

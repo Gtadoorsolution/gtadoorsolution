@@ -14,7 +14,7 @@ export default function Resedential() {
     return (
         <div>
             <LocksmithLogo
-                title={'Residential locksmith'}
+                title={'Residential Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
             />
             {/* <h2 className={locksmithStyles.headerTitle}>Residential locksmith</h2> */}

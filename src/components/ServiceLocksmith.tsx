@@ -44,7 +44,7 @@ const ServiceLocksmith: React.FC<ServiceLocksmithProps> = ({ title, description,
             </Head>
             <div className={styles.wrapper}>
                 <LocksmithLogo
-                    title={'Commercial locksmith'}
+                    title={'Locksmith Services'}
                     image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
                 />
                 <Breadcrumbs />
