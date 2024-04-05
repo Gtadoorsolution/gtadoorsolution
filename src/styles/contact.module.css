@@ -31,7 +31,14 @@
         margin-left: 10px;
     }
 
-    .map {}
+    .map {
+        border: 0;
+        width: 140%;
+        height: auto; /* Змінено з 100% на auto */
+        left: 50%; /* Додано */
+        transform: translateX(-11%); /* Додано */
+        margin-bottom: 0px
+    }
 }
 
 @media (max-width: 850px) {
