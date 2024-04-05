@@ -20,7 +20,6 @@ export default function Footer() {
                     <h2>
                         Office
                     </h2>
-                    <div>{contacts.adress || "..."}</div>
                     <div>{contacts.telNumber || "..."}</div>
                     <div>{contacts.email || "..."}</div>
                 </div>
