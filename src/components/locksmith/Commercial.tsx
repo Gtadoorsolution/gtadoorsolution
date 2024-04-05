@@ -13,7 +13,10 @@ import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip';
 export default function Commercial() {
     return (
         <div>
-            <LocksmithLogo title={"Commercial locksmith"} image='/default-ui.webp'/>
+            <LocksmithLogo
+                title={'Commercial locksmith'}
+                image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
+            />
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
@@ -35,7 +38,7 @@ export default function Commercial() {
                     >
                         <SwiperSlide>
                             <Image
-                                src={"/services/locksmith/commercial/1.jpeg"}
+                                src={"/services/locksmith/commercial/1.jpg"}
                                 alt={"default-ui.webp"}
                                 width={600}
                                 height={419}
@@ -77,7 +80,7 @@ export default function Commercial() {
                         </SwiperSlide>
                         <SwiperSlide>
                             <Image
-                                src={"/services/locksmith/commercial/2.jpg"}
+                                src={"/services/locksmith/commercial/4.jpg"}
                                 alt={"default-ui.webp"}
                                 width={600}
                                 height={419}
@@ -91,7 +94,7 @@ export default function Commercial() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <LoksmithSubCategoryStrip/>
+                <LoksmithSubCategoryStrip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         commercialLocksmith.map((category, index) => <div
