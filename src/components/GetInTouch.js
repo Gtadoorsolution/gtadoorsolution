@@ -5,7 +5,7 @@ import { sendContactForm } from '../../lib/api';
 import getInTouchStyles from '../styles/getInTouch.module.css'
 import contacts from '@/data/contacts';
 
-const initValues = { name: "", email: "", subject: "", message: "" };
+const initValues = { name: "", telNumber: "", subject: "", message: "" };
 const initState = { isLoading: false, error: "", values: initValues };
 
 const GetInTouch = () => {
@@ -68,12 +68,12 @@ const GetInTouch = () => {
                     </div>
                     <input
                         className={getInTouchStyles.input}
-                        type="email"
-                        name="email"
-                        value={values.email}
+                        type="text"
+                        name="telNumber"
+                        value={values.telNumber}
                         onChange={handleChange}
                         onBlur={onBlur}
-                        placeholder={values.email ? "" : "Email"}
+                        placeholder={values.telNumber ? "" : "Tel. Number"}
                         required
                     />
                     <input

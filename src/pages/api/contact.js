@@ -2,7 +2,7 @@ import { mailOptions, transporter } from "../../../config/nodemailer";
 
 const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
-  email: "Email",
+  telNumber: "Tel. Number",
   subject: "Subject",
   message: "Message",
 };
@@ -26,7 +26,7 @@ const generateEmailContent = (data) => {
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
-    if (!data || !data.name || !data.email || !data.subject) {
+    if (!data || !data.name || !data.subject) {
       return res.status(400).send({ message: "Name, email, and subject are required" });
     }
 
