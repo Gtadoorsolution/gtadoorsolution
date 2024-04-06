@@ -1,0 +1,45 @@
+.phone-call-button {
+    position: fixed;
+    bottom: 100px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-decoration: none;
+    animation: pulse 0.4s infinite alternate;
+}
+
+.phone-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 479px) {
+    .phone-call-button {
+        bottom: 90px;
+        right: 15px;
+        width: 53px;
+        height: 53px;
+    }
+    .phone-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
