@@ -2,53 +2,143 @@ interface Service {
     title: string | undefined;
     description: string | undefined;
     image: string | undefined;
+    lastImage: string | undefined;
+    sliderImages: string[] | undefined;
+    article1: string | undefined;
+    article2: string | undefined;
+    article3: string | undefined;
+    article4: string | undefined;
+    article5: string | undefined;
+    title2: string | undefined;
+    title3: string | undefined;
 }
 
 const servicesPage: Service[] = [
     {
         title: "Access Control System",
         description: "Popular for tracking employee attendance or traffic and ideal for providing added levels of security for sensitive documents, these systems can offer state-of-the-art technology with easy-to-use features.",
-        image: "/services/Access-control-system.jpg"
+        image: "/services/Access-control-system.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "Gtadoorsolution specializes in the installation and maintenance of Glass and Aluminum Doors, frequently utilized in retail and commercial entrances.",
+        article2: "Our extensive range of styles, colors, and pricing options ensures we're equipped to meet your needs.",
+        article3: "With our expertise in commercial-grade door systems, we handle everything from installation to repairs with precision.",
+        article4: "Whether you require manual or automatic opening mechanisms, or high-security doors with advanced access control technology, we have the experience to deliver.",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Aluminum Storefronts",
         description: "Designed and used for schools, retail stores, offices and any commercial buildings, these doors are professionally installed to guarantee top quality safety and security to your storefront or building.",
-        image: "/services/Aluminum-Storefronts.jpg"
+        image: "/services/Aluminum-Storefronts.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Automatic Doors",
         description: "Make a good first impression to visitors of your business with automatic doors. Enjoy the convenience and ease of these doors, while also enjoying the benefits they offer.",
-        image: "/services/Automatic-door-operators.jpg"
+        image: "/services/Automatic-door-operators.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Commercial Door Repair",
         description: "When damage occurs, our professional team will be out as soon as possible to assess the damage and offer you the best solutions in order to rectify the problem with little disruption to your operation.",
-        image: "/services/Commercial Door Repair.jpg"
+        image: "/services/Commercial Door Repair.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Garage Doors",
         description: "Many clients prefer the look of wood doors, making this a popular option without having to compromise on quality , durability or fire rating.",
-        image: "/services/garage-doors.jpg"
+        image: "/services/garage-doors/garage-doors.jpg",
+        sliderImages: ["/services/garage-doors/2.jpg", "/services/garage-doors/3 (2).jpg", "/services/garage-doors/7.jpg"],
+        lastImage: "/services/garage-doors/8bIMG_3285.png",
+        article1: "Welcome to GTADoorSolution – your trusted partner for expert garage door services in the Greater Toronto Area. With years of experience and a commitment to excellence, we specialize in providing comprehensive solutions for all your garage door needs.",
+        article2: "From installation to maintenance and repairs, our team of skilled technicians is dedicated to delivering prompt, reliable service tailored to your unique requirements. ",
+        article3: "Whether you require garage door repair, spring replacement, or brand new garage door installation, we've got you covered. Our expertise also extends to garage door openers, and damaged panels. ",
+        article4: "Customer satisfaction is our top priority. We offer transparent pricing, timely appointments, and courteous, professional service from start to finish.  ",
+        article5: "Trust us to keep your garage door running smoothly, ensuring convenience, safety, and peace of mind for you and your family. Contact us today to schedule your service and experience the GTADoorSolution difference.",
+        title2: "",
+        title3: "",
     },
     {
         title: "Locksmith Services",
         description: "We have been proudly serving the GTA for over 20 years, and over time, we have become known for our fast, reliable and effective locksmith services.",
-        image: "/services/Locksmith-Service.jpg"
+        image: "/services/Locksmith-Service.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Metal FireRated Doors",
         description: "Fire-rated doors play a major role in reducing damage caused by fire. These doors provide maximum safety to a property when fires occur. Not all fire-rated doors are created equal.",
-        image: "/services/Metal FireRated Doors.jpg"
+        image: "/services/Metal FireRated Doors.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Front Entry Doors",
         description: "Front Entry Doors description.",
-        image: "/services/Front Entry Doors.jpg"
+        image: "/services/Front Entry Doors.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
     {
         title: "Emergency Lockout",
         description: "Emergency Lockout description",
-        image: "/services/Emergency Lockout.jpg"
+        image: "/services/Emergency Lockout.jpg",
+        sliderImages: ["/default-ui.webp", "/default-ui.webp", "/default-ui.webp"],
+        lastImage: "/default-ui.webp",
+        article1: "",
+        article2: "",
+        article3: "",
+        article4: "",
+        article5: "",
+        title2: "",
+        title3: "",
     },
 ]
 

@@ -4,6 +4,8 @@
     /* display: flex; */
     padding-right: 320px;
     padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .sidebar {
@@ -45,6 +47,13 @@
 
 .video {
     width: 10px;
+}
+
+@media (max-width: 1400px) {
+    .slider {
+        width: 50vw;
+        padding-bottom: 40px;
+    }
 }
 
 @media (max-width: 959px) {

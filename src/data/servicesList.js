@@ -39,7 +39,7 @@ const servicesList = [
         title: "Garage Doors",
         description: "Garage Doors description",
         link: "/services/garage-doors",
-        image: "/services/garage-doors.jpg"
+        image: "/services/garage-doors/garage-doors.jpg"
     },
     {
         title: "Front Entry Doors",

@@ -198,6 +198,7 @@
         top: 0px;
         /* Задайте відстань від верху, яка вам потрібна */
         width: 450px;
+        padding-top: 30px;
     }
 
     .formWrap {
@@ -229,10 +230,12 @@
     .contactWrap {
         display: none;
     }
+    .contactWrap {
+        display: none;
+    }
 }
 
 @media (max-height: 750px) {
-
     /* Стилі, які будуть застосовані, коли висота елемента досягне або буде менше 600px */
     .wrapper {
         top: 90px;

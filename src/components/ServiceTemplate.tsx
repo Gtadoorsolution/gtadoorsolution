@@ -1,5 +1,5 @@
 //ServiceTemplate.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from './Layout';
 import Image from 'next/image';
 import serviceTemplateStyles from '../styles/serviceTemplate.module.css';
@@ -24,10 +24,33 @@ interface ServiceTemplateProps {
     title: string | undefined;
     description: string | undefined;
     image: string | undefined;
+    lastImage: string | undefined;
+    sliderImages: string[] | undefined;
     metaTags: MetaTags | undefined;
+    article1: string | undefined;
+    article2: string | undefined;
+    article3: string | undefined;
+    article4: string | undefined;
+    article5: string | undefined;
+    title2: string | undefined;
+    title3: string | undefined;
 }
 
-const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, image, metaTags }) => {
+const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
+    title,
+    description,
+    image,
+    sliderImages,
+    lastImage,
+    metaTags,
+    article1,
+    article2,
+    article3,
+    article4,
+    article5,
+    title2,
+    title3,
+}) => {
     return (
         <Layout>
             <Head>
@@ -59,40 +82,40 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                             />
                         </div>
                         <h1 className={serviceTemplateStyles.title}>{title}</h1>
-
                     </div>
                     <div className={serviceTemplateStyles.text}>
-                        <p>{description}</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, repellat earum atque, alias, voluptatibus voluptate laborum officiis molestiae fuga esse fugit odit aliquid quae mollitia nihil? Natus repellat nam ipsa!</p></div>
+                        <p>{article1}</p>
+                    </div>
                     <h3 className={serviceTemplateStyles.title2}>Lorem ipsum</h3>
                     <p className={serviceTemplateStyles.text}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        {article2}
                     </p>
-                    <p className={serviceTemplateStyles.text}>Aliquam laoreet sed neque ac vehicula. Cras congue eros nec quam laoreet, in viverra erat bibendum. Cras turpis urna, vulputate at est vitae, posuere lobortis erat.</p>
+                    <p className={serviceTemplateStyles.text}>
+                        {article3}
+                    </p>
                     <Swiper
                         className={serviceTemplateStyles.slider}
                         modules={[Pagination, Scrollbar, A11y, Navigation]}
                         navigation
-                        spaceBetween={0}
+                        spaceBetween={10}
                         pagination={{ clickable: true }}
                         breakpoints={{
                             500: {
                                 slidesPerView: 1,
                             },
                             768: {
-                                slidesPerView: 2,
+                                slidesPerView: 1,
                             },
                             1200: {
-                                slidesPerView: 2,
+                                slidesPerView: 1,
                             },
                         }}
                         loop={true}
                     >
-                        <SwiperSlide>
+                        {sliderImages?.map((image, index) => <SwiperSlide key={index}>
                             <Image
-                                src={"/default-ui.webp"}
-                                alt={"default-ui.webp"}
+                                src={image || "/default-ui.webp"}
+                                alt={"image"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -102,62 +125,18 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                         33vw
                                         "
                             />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/default-ui.webp"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
-                                        (max-width: 640px) 100vw,
-                                        (max-width: 1024px) 50vw,
-                                        33vw
-                                        "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/default-ui.webp"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
-                                        (max-width: 640px) 100vw,
-                                        (max-width: 1024px) 50vw,
-                                        33vw
-                                        "
-                            />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image
-                                src={"/default-ui.webp"}
-                                alt={"default-ui.webp"}
-                                width={600}
-                                height={419}
-                                layout="responsive"
-                                sizes="
-                                        (max-width: 640px) 100vw,
-                                        (max-width: 1024px) 50vw,
-                                        33vw
-                                        "
-                            />
-                        </SwiperSlide>
+                        </SwiperSlide>)}
                     </Swiper>
                     <p className={serviceTemplateStyles.text}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        {article4}
                     </p>
                     <h3 className={serviceTemplateStyles.title2}>Aliquam quis lobortis quam</h3>
                     <p className={serviceTemplateStyles.text}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas consequatur veniam non saepe quod mollitia aliquid debitis quaerat, similique animi ratione autem voluptates. Temporibus sequi consequatur recusandae minima facere!
+                        {article5}
                     </p>
                     <Image className={serviceTemplateStyles.video}
-                        src={"/default-ui.webp"}
-                        alt={"default-ui.webp"}
+                        src={lastImage || "/default-ui.webp"}
+                        alt={"image"}
                         width={600}
                         height={419}
                         layout="responsive"
@@ -167,7 +146,6 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ title, description, i
                                         33vw
                                         "
                     />
-                    <p className={serviceTemplateStyles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe voluptas itaque fuga accusamus sed natus, voluptate facere. Quas voluptatum facilis culpa aspernatur perferendis veritatis cumque pariatur minima excepturi vero?</p>
                 </div>
                 <div className={serviceTemplateStyles.sidebar}></div>
                 <GetInTouch />
