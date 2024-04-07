@@ -11,6 +11,16 @@
     width: 350px;
 }
 
+.stickyWrapper {
+    /* background-color: rgb(252, 248, 236); */
+    padding: 25px;
+    right: 280px;
+    /* Закріпити справа */
+    top: 100px;
+    /* Задайте відстань від верху, яка вам потрібна */
+    width: 350px;
+}
+
 .formWrap {
     width: 100%;
 }
@@ -192,7 +202,7 @@
         position: sticky;
         align-items: stretch;
         /* background-color: rgb(252, 248, 236); */
-        padding: 0px;
+        padding: 15px;
         right: 0px;
         /* Закріпити справа */
         top: 0px;
@@ -227,15 +237,18 @@
         padding-bottom: 30px;
         width: 350px;
     }
+
     .contactWrap {
         display: none;
     }
+
     .contactWrap {
         display: none;
     }
 }
 
 @media (max-height: 750px) {
+
     /* Стилі, які будуть застосовані, коли висота елемента досягне або буде менше 600px */
     .wrapper {
         top: 90px;

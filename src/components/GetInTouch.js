@@ -8,7 +8,7 @@ import contacts from '@/data/contacts';
 const initValues = { name: "", telNumber: "", subject: "", message: "" };
 const initState = { isLoading: false, error: "", values: initValues };
 
-const GetInTouch = () => {
+const GetInTouch = ({ sticky = false }) => {
     const [state, setState] = useState(initState);
     const [touched, setTouched] = useState({});
 
@@ -44,8 +44,9 @@ const GetInTouch = () => {
             alert("Failed to send message.");
         }
     };
+
     return (
-        <div className={getInTouchStyles.wrapper} >
+        <div className={!sticky ?getInTouchStyles.wrapper: getInTouchStyles.stickyWrapper} >
             <div>
                 <p className={getInTouchStyles.title}>Get in Touch</p>
                 {error && (
@@ -102,25 +103,29 @@ const GetInTouch = () => {
                     </div>
                 </form>
             </div>
-            <div className={getInTouchStyles.contactWrap}>
-                <p className={getInTouchStyles.title}>Contact Info</p>
-                <ul>
-                    <li className={getInTouchStyles.contact}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#835c46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        {contacts.email}
-                    </li>
-                    <li className={getInTouchStyles.contact}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="5" y="2" width="14" stroke="#835c46" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12" y2="18"></line>
-                        </svg>
-                        {contacts.telNumber}
-                    </li>
-                </ul>
-            </div>
+            {
+                !sticky ?
+                    <div className={getInTouchStyles.contactWrap}>
+                        <p className={getInTouchStyles.title}>Contact Info</p>
+                        <ul>
+                            <li className={getInTouchStyles.contact}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#835c46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                {contacts.email}
+                            </li>
+                            <li className={getInTouchStyles.contact}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="5" y="2" width="14" stroke="#835c46" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12" y2="18"></line>
+                                </svg>
+                                {contacts.telNumber}
+                            </li>
+                        </ul>
+                    </div>
+                    : <></>
+            }
         </div>
     );
 }

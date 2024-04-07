@@ -8,7 +8,7 @@ import emergencyLocksmith from '@/data/emergencyLocksmith';
 import locksmithSubCategoryStyles from "../../styles/locksmithSubCategory.module.css"
 import LocksmithLogo from './LocksmithLogo';
 import Breadcrumbs from '../Breadcrumbs';
-import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip';
+import Strip from '../Strip';
 
 export default function EmergencyLocksmith() {
     return (
@@ -82,7 +82,7 @@ export default function EmergencyLocksmith() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <LoksmithSubCategoryStrip />
+                <Strip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         emergencyLocksmith.map((category, index) => <div

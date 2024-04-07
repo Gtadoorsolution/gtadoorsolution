@@ -18,17 +18,24 @@
 }
 
 .button {
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px;
     color: white;
     border: none;
-    display: inline;
+    display: inline-flex; /* Змінено display на inline-flex */
+    align-items: center; /* Додано це */
+    justify-content: center; /* Додано це */
     cursor: pointer;
     background-color: red;
-    width: 150px;
+    width: 175px;
 }
 
-@media only screen and (max-width: 1400px) {
+.button a {
+    text-decoration: none; /* Додано це */
+    color: white; /* Додано це */
+}
+
+@media only screen and (max-width: 1800px) {
     .strip {
         height: 140px;
         flex-direction: column;

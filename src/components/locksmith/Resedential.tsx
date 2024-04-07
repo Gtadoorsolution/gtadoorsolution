@@ -8,7 +8,7 @@ import { Pagination, Scrollbar, A11y, Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css'
 import LocksmithLogo from './LocksmithLogo'
 import Breadcrumbs from '../Breadcrumbs'
-import LoksmithSubCategoryStrip from './LoksmithSubCategoryStrip'
+import Strip from '../Strip'
 
 export default function Resedential() {
     return (
@@ -80,7 +80,7 @@ export default function Resedential() {
                         </SwiperSlide>
                     </Swiper>
                 </div>
-                <LoksmithSubCategoryStrip />
+                <Strip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
                         residentialLocksmith.map((category, index) => <div
