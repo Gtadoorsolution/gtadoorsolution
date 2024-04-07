@@ -6,7 +6,7 @@
     position: fixed;
     right: 280px;
     /* Закріпити справа */
-    top: 130px;
+    top: 100px;
     /* Задайте відстань від верху, яка вам потрібна */
     width: 350px;
 }
@@ -225,5 +225,26 @@
         position: sticky;
         padding-bottom: 30px;
         width: 350px;
+    }
+    .contactWrap {
+        display: none;
+    }
+}
+
+@media (max-height: 750px) {
+
+    /* Стилі, які будуть застосовані, коли висота елемента досягне або буде менше 600px */
+    .wrapper {
+        top: 90px;
+    }
+
+    .contactWrap {
+        display: none;
+    }
+}
+
+@media (max-height: 630px) {
+    .wrapper {
+        display: none;
     }
 }
