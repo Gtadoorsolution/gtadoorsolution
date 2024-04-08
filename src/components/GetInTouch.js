@@ -4,11 +4,14 @@ import { useState } from "react";
 import { sendContactForm } from '../../lib/api';
 import getInTouchStyles from '../styles/getInTouch.module.css'
 import contacts from '@/data/contacts';
-
-const initValues = { name: "", telNumber: "", subject: "", message: "" };
-const initState = { isLoading: false, error: "", values: initValues };
+import { useRouter } from 'next/router';
 
 const GetInTouch = ({ sticky = false }) => {
+    const router = useRouter();
+
+    const initValues = { name: "", telNumber: "", page: router.pathname, details: "" };
+    const initState = { isLoading: false, error: "", values: initValues };
+
     const [state, setState] = useState(initState);
     const [touched, setTouched] = useState({});
 
@@ -46,7 +49,7 @@ const GetInTouch = ({ sticky = false }) => {
     };
 
     return (
-        <div className={!sticky ?getInTouchStyles.wrapper: getInTouchStyles.stickyWrapper} >
+        <div className={!sticky ? getInTouchStyles.wrapper : getInTouchStyles.stickyWrapper} >
             <div>
                 <p className={getInTouchStyles.title}>Get in Touch</p>
                 {error && (
@@ -77,16 +80,15 @@ const GetInTouch = ({ sticky = false }) => {
                         placeholder={values.telNumber ? "" : "Tel. Number"}
                         required
                     />
-                    <input
-                        className={getInTouchStyles.input}
-                        type="text"
-                        name="subject"
-                        value={values.subject}
+                    <textarea
+                        className={`${getInTouchStyles.input} ${touched.details && !values.details ? getInTouchStyles.errorInput : ''}`}
+                        name="details"
+                        rows="4"
+                        value={values.details}
                         onChange={handleChange}
                         onBlur={onBlur}
-                        placeholder={values.subject ? "" : "Subject"}
-                        required
-                    />
+                        placeholder={values.details ? "" : "\nDetails\n(Not Required)"}
+                    ></textarea>
                     <div>
                         <button
                             className={getInTouchStyles.button}
