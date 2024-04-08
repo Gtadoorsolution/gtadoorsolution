@@ -4,7 +4,18 @@
     padding-bottom: 40px;
 }
 
+.wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
 .wrapper>* {
+    flex-basis: calc(33.33% - 1rem);
+    margin: 0.5rem;
+}
+
+.wrapper2>* {
     flex-basis: calc(33.33% - 1rem);
     margin: 0.5rem;
 }
@@ -43,6 +54,9 @@
 
 @media only screen and (max-width: 920px) {
     .wrapper>* {
+        flex-basis: calc(100%);
+    }
+    .wrapper2>* {
         flex-basis: calc(100%);
     }
     .title {

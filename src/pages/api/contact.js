@@ -13,7 +13,6 @@ const generateEmailContent = (data) => {
       (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),
     ""
   );
-  console.log(stringData)
   const htmlData = Object.entries(data).reduce((str, [key, val]) => {
     return (str += `
       <h3 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key]}</h3>
