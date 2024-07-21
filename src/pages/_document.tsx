@@ -10,7 +10,6 @@ class MyDocument extends Document {
                 <title>GTADOORSOLUTION</title>
                 <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
                 <meta property="og:image" content="/LogoBaner.svg" />
-                <meta name="twitter:image" content="/LogoBaner.svg" />
                 <body>
                     <Main />
                     <NextScript />
