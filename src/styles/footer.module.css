@@ -3,10 +3,9 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(10%, auto));
     max-width: 100%;
-    color: #e2e2e2;
-    background-color: #0a0300;
+    color: #F7C571;
+    background-color: #0C1C3B;
     font-size: 13px;
-    color: #e2e2e2;
     line-height: 18px;
 }
 
