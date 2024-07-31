@@ -47,15 +47,13 @@ export default function NavBar() {
                 <div className={styles.navbar}>
                     <div className={styles.logo}>
                         <Link href="/" aria-label="Home">
-                            <svg style={{ display: "block", margin: 0, padding: 0, border: 0 }} width="100" height="60" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                                <text x="50%" y="65%" fontFamily="Verdana" fontSize="120" fill="white" textAnchor="middle" alignmentBaseline="middle">DS</text>
-                            </svg>
+                            <img src="/logoShort.svg" alt="GTADOORSOLUTION logo" height={70}/>
                         </Link>
                     </div>
                     <div className={styles.phone}>
                         <a href={`tel:${contacts.telNumber}`} className={styles.li}>
                             <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="black" />
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="#CD984C" />
                             </svg>
                         </a>
                     </div>
@@ -67,7 +65,7 @@ export default function NavBar() {
                     <ul className={styles.menuPC}>
                         <li><Link href="/">Home</Link></li>
                         <li>
-                            <span onClick={handleMenuToggleDesktop}>Services</span>
+                            <span style={{color: "#CD984C"}} onClick={handleMenuToggleDesktop}>Services</span>
                             {isMenuOpenDesktop && (
                                 <ul className={`${styles.submenuDesctop} ${isMenuOpenDesktop && styles.open}`}>
                                     {servicesList.map((service, index) => <li key={index}>
@@ -101,7 +99,7 @@ export default function NavBar() {
                         <li>
                             <a href={`tel:${contacts.telNumber}`} className={styles.li}>
                                 <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="black" />
+                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" fill="#CD984C" />
                                 </svg>
                             </a>
                         </li>

@@ -6,7 +6,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "",
         'og:description': "",
-        'og:image': "",
+        'og:image': "/LogoBaner.svg",
         'twitter:card': "",
     },
     {
@@ -106,7 +106,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "",
         'og:description': "",
-        'og:image': "",
+        'og:image': "/LogoBaner.svg",
         'twitter:card': "",
     },
     {
@@ -116,7 +116,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "",
         'og:description': "",
-        'og:image': "",
+        'og:image': "/LogoBaner.svg",
         'twitter:card': "",
     },
 ]
