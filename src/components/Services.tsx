@@ -42,9 +42,7 @@ export default function Services() {
                                         loading='eager'
                                     />
                                 </div>
-                                <p className={styles.title3}>Best Sercice</p>
                                 <h2 className={styles.title4}>{service.title}</h2>
-                                <p className={styles.description}>{service.description}</p>
                             </div>
                         </Link>
                     </div>
