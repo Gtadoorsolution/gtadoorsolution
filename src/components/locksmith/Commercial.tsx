@@ -21,9 +21,9 @@ export default function Commercial() {
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
                 <div className={locksmithStyles.textWrapper}>
-                    <p className={locksmithStyles.textBolt}>Mr. Locks was founded in 2003, and has since become one of New York’s leading locksmith companies. We provide commercial locksmith services to new construction projects, property management companies, real estate agencies, architects and interior designers, retail stores,  restaurants, schools, universities, medical facilities, apartment complexes, small businesses and numerous other commercial facilities around the city.</p>
-                    <p className={locksmithStyles.text}>Whether you are a business owner or responsible for a retail store, warehouse, single office, entire office building, or other commercial space in New York City, Mr. Locks can provide high-quality commercial locksmith services and security solutions according to your needs and building requirements.</p>
-                    <p className={locksmithStyles.textBolt}>We are licensed, bonded and have insurance coverage over $5 million.</p>
+                    <p className={locksmithStyles.textBolt}>Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city.</p>
+                    <p className={locksmithStyles.text}>Whether you’re managing a retail store, warehouse, single office, or an entire office building, GTADoorSolutions is here to deliver high-quality locksmith services and security solutions tailored to your needs.</p>
+                    <p className={locksmithStyles.textBolt}>We are fully licensed, bonded, and insured with coverage exceeding $5 million, ensuring that you receive the most reliable and secure service available.</p>
                 </div>
                 <div className={locksmithStyles.sliderWrapper}>
                     <Swiper

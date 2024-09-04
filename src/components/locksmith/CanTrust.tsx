@@ -7,7 +7,7 @@ export default function CanTrust() {
     return (
         <div className={canTrustStyles.wrapper}>
             <p className={canTrustStyles.title}>LOCKSMITH SERVICES YOU CAN TRUST!</p>
-            <p className={canTrustStyles.description}>We are prepared to handle any locksmith service you may require. Whether it's installing a new lock on your apartment door, changing commercial locks, replacing car keys, or needing emergency locksmith assistance, you can trust that we'll assist you. Our team offers 24/7 commercial, residential, and automotive locksmith services in New York City. Wherever you are in NYC, count on us to be there for you!</p>
+            <p className={canTrustStyles.description}>We’re equipped to handle all your locksmith needs with professionalism and efficiency. Whether you need a new lock installed on your apartment door, require lock changes for your business, need a new car key, or find yourself locked out in an emergency, you can rely on us for swift and reliable assistance. Our team provides 24/7 locksmith services for commercial, residential, and automotive needs throughout the Toronto GTA area. Wherever you are, you can count on us to be there when you need us!</p>
             <div className={canTrustStyles.buttonsWrapper}>
                 <Link href='/contact'>
                     <button style={{ backgroundColor: "black" }} className={canTrustStyles.button}>Contact Us</button>
