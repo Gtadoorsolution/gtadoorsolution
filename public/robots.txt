@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.gtadoorsolutions.ca
+
+# Sitemaps
+Sitemap: https://www.gtadoorsolutions.ca/sitemap.xml
