@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% від висоти екрану */
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.linkButton {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0C1C3B; /* Блакитний фон */
+    color: #F2C973;
+    text-decoration: none; /* Прибираємо підкреслення */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+    background-color: #18346d; /* Темніший колір при наведенні */
+}
+
