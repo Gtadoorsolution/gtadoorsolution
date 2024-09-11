@@ -26,7 +26,7 @@ export default function Footer() {
                     </a>
                     <div style={{ display: "flex" }}>
                         <svg style={{ marginRight: 5 }} width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                            <text x="0%" y="65%" font-family="Arial" font-size="25" fill="#a1a1a1">@</text>
+                            <text x="0%" y="65%" fontFamily="Arial" fontSize="25" fill="#a1a1a1">@</text>
                         </svg>
                         <a href={`mailto:${contacts.email || ""}`}>{contacts.email || ""}</a>
                     </div>
