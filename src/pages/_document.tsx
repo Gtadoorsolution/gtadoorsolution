@@ -6,10 +6,11 @@ class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
-                <Head />
-                <title>GTADOORSOLUTION</title>
-                <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
-                <meta property="og:image" content="/LogoBaner.svg" />
+                <Head>
+                    <title>GTADOORSOLUTION</title>
+                    <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
+                    <meta property="og:image" content="/LogoBaner.svg" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />
