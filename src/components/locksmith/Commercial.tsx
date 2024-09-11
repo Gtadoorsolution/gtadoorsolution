@@ -9,10 +9,19 @@ import locksmithSubCategoryStyles from "../../styles/locksmithSubCategory.module
 import LocksmithLogo from './LocksmithLogo';
 import Breadcrumbs from '../Breadcrumbs';
 import Strip from '../Strip';
+import Head from 'next/head';
 
 export default function Commercial() {
     return (
         <div>
+            <Head>
+                <title>{'Commercial Locksmith'}</title>
+                <meta
+                    name="description"
+                    content={"Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city."}
+                />
+                <meta property="og:image" content="/LogoBaner.svg" />
+            </Head>
             <LocksmithLogo
                 title={'Commercial Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'

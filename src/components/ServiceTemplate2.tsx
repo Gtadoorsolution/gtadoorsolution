@@ -10,6 +10,7 @@ import LocksmithLogo from '../components/locksmith/LocksmithLogo'
 import Breadcrumbs from './Breadcrumbs'
 import Strip from './Strip'
 import Layout from '../components/Layout'
+import Head from 'next/head';
 
 interface ServiceTemplateProps2 {
     title: string | undefined;
@@ -42,6 +43,14 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
     return (
         <Layout>
             <div>
+                <Head>
+                    <title>{title || 'GTADOORSOLUTIONS'}</title>
+                    <meta
+                        name="description"
+                        content={article1 || "MAKING SURE THE KEYS ARE IN YOUR HANDS"}
+                    />
+                    <meta property="og:image" content="/LogoBaner.svg" />
+                </Head>
                 <LocksmithLogo
                     title={title || 'Residential Locksmith'}
                     image={banner || '/services/locksmith/recedential/locksmithResedentialBaner.jpg'}

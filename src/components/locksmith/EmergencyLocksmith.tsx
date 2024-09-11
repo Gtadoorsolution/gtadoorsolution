@@ -9,10 +9,19 @@ import locksmithSubCategoryStyles from "../../styles/locksmithSubCategory.module
 import LocksmithLogo from './LocksmithLogo';
 import Breadcrumbs from '../Breadcrumbs';
 import Strip from '../Strip';
+import Head from 'next/head';
 
 export default function EmergencyLocksmith() {
     return (
         <div>
+            <Head>
+                <title>{'Emergency Locksmith'}</title>
+                <meta
+                    name="description"
+                    content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
+                />
+                <meta property="og:image" content="/LogoBaner.svg" />
+            </Head>
             <LocksmithLogo
                 title={'Emergency Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'

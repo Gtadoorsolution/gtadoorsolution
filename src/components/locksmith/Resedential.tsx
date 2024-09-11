@@ -9,10 +9,19 @@ import 'swiper/swiper-bundle.css'
 import LocksmithLogo from './LocksmithLogo'
 import Breadcrumbs from '../Breadcrumbs'
 import Strip from '../Strip'
+import Head from 'next/head'
 
 export default function Resedential() {
     return (
         <div>
+            <Head>
+                <title>{'Residential Locksmith'}</title>
+                <meta
+                    name="description"
+                    content={"Locked out of your home? Need to rekey your lock or install a new one? Doorsolution Locksmith is here to help with all your residential locksmith needs in the Greater Toronto Area (GTA)."}
+                />
+                <meta property="og:image" content="/LogoBaner.svg" />
+            </Head>
             <LocksmithLogo
                 title={'Residential Locksmith'}
                 image='/services/locksmith/recedential/locksmithResedentialBaner.jpg'
