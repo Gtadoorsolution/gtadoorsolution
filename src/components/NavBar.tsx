@@ -47,7 +47,7 @@ export default function NavBar() {
                 <div className={styles.navbar}>
                     <div className={styles.logo}>
                         <Link href="/" aria-label="Home">
-                            <img src="/logoShort.svg" alt="GTADOORSOLUTIONS logo" height={70}/>
+                            <img src="/logoShort.svg" alt="Logo image GTADOORSOLUTIONS." height={70}/>
                         </Link>
                     </div>
                     <div className={styles.phone}>

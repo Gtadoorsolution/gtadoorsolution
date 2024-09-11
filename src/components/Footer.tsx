@@ -11,7 +11,7 @@ export default function Footer() {
             <div className={styles.grid}>
                 <div className={styles.card}>
                     <Link href="/" aria-label="Home">
-                        <img src="/logoShort.svg" height={70} />
+                        <img src="/logoShort.svg" height={70} alt="Logo image GTADOORSOLUTIONS."/>
                     </Link>
                 </div>
                 <div className={styles.card}>
