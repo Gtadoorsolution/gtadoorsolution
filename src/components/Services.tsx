@@ -9,7 +9,7 @@ export default function Services() {
     return (
         <div className={styles.wrapper}>
             <Head>
-                <title>Locksmith</title>
+                <title>GTADoorSolutions</title>
                 <meta
                     name="description"
                     content="description"

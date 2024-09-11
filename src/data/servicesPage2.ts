@@ -18,7 +18,7 @@ const servicesPage: Service[] = [
         title: "Access Control System",
         banner: "/services/access-control-system/Access-control-system Main.jpg",
         sliderImages: ["/services/access-control-system/Slider/5.jpeg", "/services/access-control-system/Slider/6.jpeg", "/services/access-control-system/Slider/7.jpeg"],
-        article1: "Gtadoorsolution specializes in the installation and maintenance of Glass and Aluminum Doors, frequently utilized in retail and commercial entrances.",
+        article1: "Gtadoorsolutions specializes in the installation and maintenance of Glass and Aluminum Doors, frequently utilized in retail and commercial entrances.",
         article2: "Our extensive range of styles, colors, and pricing options ensures we're equipped to meet your needs.",
         article3: "With our expertise in commercial-grade door systems, we handle everything from installation to repairs with precision.",
         article4: "Whether you require manual or automatic opening mechanisms, or high-security doors with advanced access control technology, we have the experience to deliver.",
@@ -26,22 +26,22 @@ const servicesPage: Service[] = [
             {
                 image: "/services/access-control-system/Keypad, Card & Fob Keyless Entry Systems.jpg",
                 title: "Keypad, Card & Fob Keyless Entry Systems:",
-                description: "These systems offer convenient and secure access management using keypads, cards, or fobs. Common in commercial buildings, hospitals, schools, and residential complexes, GTADoorsolution provides tailored access control solutions for businesses of all sizes, including standalone and networked systems",
+                description: "These systems offer convenient and secure access management using keypads, cards, or fobs. Common in commercial buildings, hospitals, schools, and residential complexes, GTADoorsolutions provides tailored access control solutions for businesses of all sizes, including standalone and networked systems",
             },
             {
                 image: "/services/access-control-system/Cloud-Based Access Control Solutions.jpg",
                 title: "Cloud-Based Access Control Solutions",
-                description: "Cloud-based access control solutions allow remote management via a web-based interface, offering flexibility and convenience. Businesses can efficiently manage access rights and monitor activities from anywhere. GTADoorsolution provides tailored cloud-based options to meet the unique needs of each business in the Greater Toronto Area.",
+                description: "Cloud-based access control solutions allow remote management via a web-based interface, offering flexibility and convenience. Businesses can efficiently manage access rights and monitor activities from anywhere. GTADoorsolutions provides tailored cloud-based options to meet the unique needs of each business in the Greater Toronto Area.",
             },
             {
                 image: "/services/access-control-system/Mobile access control.jpg",
                 title: "Mobile access control",
-                description: "Mobile access systems use smartphones or tablets to grant or deny entry to a building or facility. This system removes the need for physical keys, access cards, or fobs, providing a streamlined access control process. GTADoorsolution offers mobile access control systems that integrate Bluetooth, Wi-Fi, and Near Field Communication (NFC), tailored to meet the needs of businesses in the Greater Toronto Area.",
+                description: "Mobile access systems use smartphones or tablets to grant or deny entry to a building or facility. This system removes the need for physical keys, access cards, or fobs, providing a streamlined access control process. GTADoorsolutions offers mobile access control systems that integrate Bluetooth, Wi-Fi, and Near Field Communication (NFC), tailored to meet the needs of businesses in the Greater Toronto Area.",
             },
             {
                 image: "/services/access-control-system/Biometric Access Control System.jpg",
                 title: "Biometric Access Control System",
-                description: "Biometric access control systems use physical traits like fingerprints or facial recognition to manage building access, offering high security as biometric data is hard to forge. GTADoorsolution provides various biometric solutions, including facial recognition, fingerprint scanning, and iris recognition, tailored to businesses in the Greater Toronto Area.",
+                description: "Biometric access control systems use physical traits like fingerprints or facial recognition to manage building access, offering high security as biometric data is hard to forge. GTADoorsolutions provides various biometric solutions, including facial recognition, fingerprint scanning, and iris recognition, tailored to businesses in the Greater Toronto Area.",
             },
             {
                 image: "/services/access-control-system/Visitor Management Systems.jpg",
@@ -51,12 +51,12 @@ const servicesPage: Service[] = [
             {
                 image: "/services/access-control-system/Security Turnstile Systems.jpg",
                 title: "Security Turnstile Systems",
-                description: "Security turnstile systems regulate the movement of people into and out of buildings, often used in high-security areas like government buildings or airports to prevent unauthorized entry. GTADoorsolution offers a range of turnstiles, including full-height, tripod, and waist-high, serving the Greater Toronto Area.",
+                description: "Security turnstile systems regulate the movement of people into and out of buildings, often used in high-security areas like government buildings or airports to prevent unauthorized entry. GTADoorsolutions offers a range of turnstiles, including full-height, tripod, and waist-high, serving the Greater Toronto Area.",
             },
             {
                 image: "/services/access-control-system/ID Badging System.jpg",
                 title: "ID Badging System",
-                description: "ID badging systems create and manage badges for employees, contractors, or visitors, helping identify those with authorized access and track activity for added security. GTADoorsolution offers various ID badging solutions, including photo ID badges and proximity cards, serving the Greater Toronto Area.",
+                description: "ID badging systems create and manage badges for employees, contractors, or visitors, helping identify those with authorized access and track activity for added security. GTADoorsolutions offers various ID badging solutions, including photo ID badges and proximity cards, serving the Greater Toronto Area.",
             },
         ]
     },
@@ -73,7 +73,7 @@ const servicesPage: Service[] = [
         article1: "We are ready to handle any aluminum storefront service you may need.",
         article2: "Whether it's installing a new storefront, repairing existing aluminum frames, replacing glass panels, or needing emergency storefront assistance, you can trust us to help.",
         article3: "Our team offers 24/7 commercial aluminum storefront services in Toronto and the Greater Toronto Area.",
-        article4: "Wherever you are in the GTA, count on GTADoorsolution to be there for you!",
+        article4: "Wherever you are in the GTA, count on GTADoorsolutions to be there for you!",
         categories: [
             {
                 image: "/services/aluminum-storefronts/Wood storefronts.jpg",
@@ -93,17 +93,17 @@ const servicesPage: Service[] = [
             {
                 image: "/services/aluminum-storefronts/Aluminum Framed Partitions.jpg",
                 title: "Aluminum Framed Partitions",
-                description: "Enhance your office or commercial space with customizable framed partitions from GTADoorsolution in the GTA. Choose from glass, metal, or wood finishes to create stylish dividers that boost collaboration, productivity, and aesthetic appeal. Our systems provide privacy and sound control while maintaining an open environment.",
+                description: "Enhance your office or commercial space with customizable framed partitions from GTADoorsolutions in the GTA. Choose from glass, metal, or wood finishes to create stylish dividers that boost collaboration, productivity, and aesthetic appeal. Our systems provide privacy and sound control while maintaining an open environment.",
             },
             {
                 image: "/services/aluminum-storefronts/Aluminum & Commercial Glass Doors.jpg",
                 title: "Aluminum & Commercial Glass Doors",
-                description: "With extensive experience, GTADoorsolution offers a diverse range of modern interior glass and door products to Toronto and the GTA. Our selection includes sliding glass doors, room dividers, bi-fold doors, and suspended glass doors, available in various frame finishes and glass options for both residential and commercial use. Unsure which door suits your space? Our experts, with decades of combined experience, will help you find the perfect product for your needs and budget.",
+                description: "With extensive experience, GTADoorsolutions offers a diverse range of modern interior glass and door products to Toronto and the GTA. Our selection includes sliding glass doors, room dividers, bi-fold doors, and suspended glass doors, available in various frame finishes and glass options for both residential and commercial use. Unsure which door suits your space? Our experts, with decades of combined experience, will help you find the perfect product for your needs and budget.",
             },
             {
                 image: "/services/aluminum-storefronts/Residential house windows replacement.jpg",
                 title: "Residential house windows replacement",
-                description: "Are you looking for a licensed, insured, and experienced installer in the Greater Toronto Area to assist with your house window replacements? GTADoorsolution provides top-quality fabrication and installation of high-thermal-performance and low-noise windows for your home",
+                description: "Are you looking for a licensed, insured, and experienced installer in the Greater Toronto Area to assist with your house window replacements? GTADoorsolutions provides top-quality fabrication and installation of high-thermal-performance and low-noise windows for your home",
             },
         ]
     },
@@ -114,7 +114,7 @@ const servicesPage: Service[] = [
         article1: "We are ready to manage any automatic door service you require.",
         article2: "Whether it's installing new automatic doors for your business, repairing current ones, performing maintenance, or providing emergency assistance, you can rely on us.",
         article3: "Our team delivers 24/7 commercial and residential automatic door services in Toronto and the Greater Toronto Area. ",
-        article4: "No matter where you are in the GTA, GTADoorsolution is here to assist you!",
+        article4: "No matter where you are in the GTA, GTADoorsolutions is here to assist you!",
         categories: [
             {
                 image: "/services/automatic-door/BI-FOLDING DOORS.jpg",
@@ -155,7 +155,7 @@ const servicesPage: Service[] = [
         article1: "We are equipped to manage any commercial door repair service you need.",
         article2: "Whether it's repairing or replacing doors for your business, addressing hardware issues, or providing emergency repair assistance, you can rely on us.",
         article3: "Our team offers 24/7 commercial door repair services in Toronto and the Greater Toronto Area.",
-        article4: "No matter where you are in the GTA, count on GTADoorsolution to be there for you!",
+        article4: "No matter where you are in the GTA, count on GTADoorsolutions to be there for you!",
         categories: [
             {
                 image: "/services/commercial-door-repair/Door Installation.jpg",
@@ -193,7 +193,7 @@ const servicesPage: Service[] = [
         title: "Garage Doors",
         banner: "/services/garage-doors/garage-doors.jpg",
         sliderImages: ["/services/garage-doors/2.jpg", "/services/garage-doors/3 (2).jpg", "/services/garage-doors/7.jpg"],
-        article1: "Welcome to GTADoorSolution – your trusted partner for expert garage door services in the Greater Toronto Area. With years of experience and a commitment to excellence, we specialize in providing comprehensive solutions for all your garage door needs.",
+        article1: "Welcome to GTADoorSolutions – your trusted partner for expert garage door services in the Greater Toronto Area. With years of experience and a commitment to excellence, we specialize in providing comprehensive solutions for all your garage door needs.",
         article2: "From installation to maintenance and repairs, our team of skilled technicians is dedicated to delivering prompt, reliable service tailored to your unique requirements. ",
         article3: "Whether you require garage door repair, spring replacement, or brand new garage door installation, we've got you covered. Our expertise also extends to garage door openers, and damaged panels. ",
         article4: "Customer satisfaction is our top priority. We offer transparent pricing, timely appointments, and courteous, professional service from start to finish.  ",
@@ -278,7 +278,7 @@ const servicesPage: Service[] = [
         article1: "Enhance the safety and security of your property with GTADoorSolution's premium metal fire-rated doors. ",
         article2: "Designed for superior fire resistance, these doors are essential for protecting your home or business in Toronto and the GTA. Our expert installation ensures a perfect fit and optimal function, providing you with peace of mind.",
         article3: "Built to last, our doors combine durability with robust construction to withstand extreme conditions. Suitable for residential, commercial, or industrial use, we offer a variety of styles and finishes to meet your needs and preferences.",
-        article4: "Invest in ultimate protection. Contact GTADoorSolution today for a free consultation and discover how our fire-rated doors can elevate your safety standards. Your safety is our priority—let us help you safeguard what matters most.",
+        article4: "Invest in ultimate protection. Contact GTADoorSolutions today for a free consultation and discover how our fire-rated doors can elevate your safety standards. Your safety is our priority—let us help you safeguard what matters most.",
         categories: [
             {
                 image: "/services/metal-firerated-doors/Fire-Rated Roll-Up Doors and Smoke Curtains.jpg",

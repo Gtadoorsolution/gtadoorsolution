@@ -13,7 +13,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <main className={styles.main}>
       <Head>
-        <title>GTADOORSOLUTION</title>
+        <title>GTADOORSOLUTIONS</title>
         <meta
           name="description"
           content="MAKING SURE THE KEYS ARE IN YOUR HANDS"

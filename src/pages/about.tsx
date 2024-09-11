@@ -8,7 +8,7 @@ export default function about() {
     return (
         <Layout>
             <Head>
-                <title>About Locksmith</title>
+                <title>About GTADoorSolutions</title>
                 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cumque aspernatur dolores doloribus tempore harum odit molestias esse ratione consequatur quod, ipsa molestiae. Aliquid laborum dolor quasi ad hic quam." />
             </Head>
             <div className={styles.wrapper}>
