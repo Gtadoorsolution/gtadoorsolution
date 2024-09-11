@@ -6,7 +6,7 @@ interface Contacts {
 
 const contacts: Contacts = {
     email: "gtadoorsolution@gmail.com",
-    telNumber: "+1 (437) 600-0688",
+    telNumber: "+14376000688",
     schedule: "Mon - Sun 24/7",
 }
 
