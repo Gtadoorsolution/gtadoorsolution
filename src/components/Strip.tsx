@@ -22,7 +22,7 @@ export default function Strip() {
                     </button>
                 )}
                 <button className={styles.button}>
-                    <a href={`tel:${contacts.telNumber}`}>{contacts.telNumber}</a>
+                    <a href={`tel:${contacts.telNumber}`}>{contacts.telNumberView}</a>
                 </button>
             </div>
         </div>
