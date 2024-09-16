@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.gtadoorsolutions.ca
+Host: https://gtadoorsolutions.ca
 
 # Sitemaps
-Sitemap: https://www.gtadoorsolutions.ca/sitemap.xml
+Sitemap: https://gtadoorsolutions.ca/sitemap.xml

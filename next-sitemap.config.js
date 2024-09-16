@@ -1,6 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://www.gtadoorsolutions.ca', // Змініть на URL вашого сайту
-    generateRobotsTxt: true, // Генерує robots.txt разом із sitemap.xml
-  }
-  
+  siteUrl: 'https://gtadoorsolutions.ca', // Âñòàíîâ³òü URL áåç www
+  generateRobotsTxt: true, // Çãåíåðóâàòè ôàéë robots.txt çàëåæíî â³ä sitemap.xml
+}
