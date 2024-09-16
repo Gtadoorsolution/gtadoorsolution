@@ -11,14 +11,15 @@ const Home: NextPage = () => {
         <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
         <meta property="og:title" content="GTADOORSOLUTIONS" />
         <meta property="og:description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
-        <meta property="og:image" content="https://locksmith-tau.vercel.app/LogoBaner.png" />
-        <meta property="og:url" content="https://locksmith-tau.vercel.app/" />
+        <meta property="og:image" content="https://gtadoorsolutions.ca/LogoBaner.png" />
+        <meta property="og:url" content="https://gtadoorsolutions.ca/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="GTADOORSOLUTIONS" />
         <meta name="twitter:description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
-        <meta name="twitter:image" content="https://locksmith-tau.vercel.app/LogoBaner.png" />
-        <meta name="twitter:url" content="https://locksmith-tau.vercel.app/" />
+        <meta name="twitter:image" content="https://gtadoorsolutions.ca/LogoBaner.png" />
+        <meta name="twitter:url" content="https://gtadoorsolutions.ca/" />
+        <link rel="canonical" href="https://gtadoorsolutions.ca" />
       </Head>
     <HomeContent />
     <Comments />

@@ -10,6 +10,7 @@ export default function about() {
             <Head>
                 <title>About GTADoorSolutions</title>
                 <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cumque aspernatur dolores doloribus tempore harum odit molestias esse ratione consequatur quod, ipsa molestiae. Aliquid laborum dolor quasi ad hic quam." />
+                <link rel="canonical" href="https://gtadoorsolutions.ca/about" />
             </Head>
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>About Locksmith</h1>

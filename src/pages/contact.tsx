@@ -13,6 +13,7 @@ const ContactPage = () => {
             <Head>
                 <title>CONTACT US</title>
                 <meta name="description" content="Have Questions? Get in Touch!" />
+                <link rel="canonical" href="https://gtadoorsolutions.ca/contact" />
             </Head>
             <div className={styles.wrapper}>
                 <p className={styles.title}>CONTACT US</p>

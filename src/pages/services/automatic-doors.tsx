@@ -9,6 +9,7 @@ export default function AutomaticDoors() {
     const serviceData = servicesPage.find(service => service.title === "Automatic Doors");
     const serviceData2 = servicesPage2.find(service => service.title === "Automatic Doors");
     const metaTags = metaTagsData.find(meta => meta.page === "automatic-doors");
+    const canonicalUrl = metaTags?.canonical || '';
     const template = process.env.TEMPLATE;
     if (template === "WD") return <ServiceTemplate
         key={serviceData?.title}
@@ -35,5 +36,6 @@ export default function AutomaticDoors() {
         article3={serviceData2?.article3}
         article4={serviceData2?.article4}
         categories={serviceData2?.categories}
+        canonical={canonicalUrl}
     />
 }

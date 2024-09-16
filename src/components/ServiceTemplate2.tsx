@@ -25,6 +25,7 @@ interface ServiceTemplateProps2 {
         title: string | undefined;
         description: string | undefined;
     }[] | undefined;
+    canonical: string;
 }
 
 const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
@@ -35,7 +36,8 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
     article2,
     article3,
     article4,
-    categories
+    categories,
+    canonical
 }) => {
 
     console.log(categories)
@@ -50,6 +52,8 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
                         content={article1 || "MAKING SURE THE KEYS ARE IN YOUR HANDS"}
                     />
                     <meta property="og:image" content="/LogoBaner.svg" />
+                    {/* <meta property="og:image" content={metaTagsData.find(meta => meta.page === "access-control-system")?.['og:image']} /> */}
+                    <link rel="canonical" href={canonical} />
                 </Head>
                 <LocksmithLogo
                     title={title || 'Residential Locksmith'}

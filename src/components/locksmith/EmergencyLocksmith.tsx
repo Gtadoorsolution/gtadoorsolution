@@ -21,6 +21,7 @@ export default function EmergencyLocksmith() {
                     content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
                 />
                 <meta property="og:image" content="/LogoBaner.svg" />
+                <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/emergency" />
             </Head>
             <LocksmithLogo
                 title={'Emergency Locksmith'}

@@ -21,6 +21,7 @@ export default function Commercial() {
                     content={"Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city."}
                 />
                 <meta property="og:image" content="/LogoBaner.svg" />
+                <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/commercial" />
             </Head>
             <LocksmithLogo
                 title={'Commercial Locksmith'}
