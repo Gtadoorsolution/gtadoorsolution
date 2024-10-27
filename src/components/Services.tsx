@@ -9,6 +9,7 @@ export default function Services() {
     return (
         <div className={styles.wrapper}>
             <Head>
+                <meta name="robots" content="noindex"/>
                 <title>Locksmith</title>
                 <meta
                     name="description"

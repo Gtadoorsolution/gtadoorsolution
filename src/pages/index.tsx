@@ -7,6 +7,7 @@ import Head from 'next/head';
 const Home: NextPage = () => {
   return <Layout>
     <Head>
+        <meta name="robots" content="noindex"/>
         <title>GTADOORSOLUTION</title>
         <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
         <meta property="og:title" content="GTADOORSOLUTION" />

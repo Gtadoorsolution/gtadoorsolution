@@ -11,6 +11,7 @@ const ContactPage = () => {
     return (
         <Layout>
             <Head>
+                <meta name="robots" content="noindex"/>
                 <title>CONTACT US</title>
                 <meta name="description" content="Have Questions? Get in Touch!" />
             </Head>
