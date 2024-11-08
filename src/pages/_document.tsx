@@ -7,7 +7,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head />
-                <script
+                {/* <script
                     async
                     src="https://www.googletagmanager.com/gtag/js?id=G-YNPJRWMB46"
                 ></script>
@@ -20,7 +20,7 @@ class MyDocument extends Document {
               gtag('config', 'G-YNPJRWMB46');
             `,
                     }}
-                />
+                /> */}
                 <title>GTADOORSOLUTION</title>
                 <meta name="description" content="MAKING SURE THE KEYS ARE IN YOUR HANDS" />
                 <meta property="og:image" content="/LogoBaner.svg" />
