@@ -3,4 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemaps
+
 Sitemap: https://gtadoorsolutions.ca/sitemap.xml
