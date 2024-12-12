@@ -7,7 +7,7 @@ export default function UnderFooter() {
             color: "#c5c5c5",
         }}>
             <hr style={{ borderColor: "black", width: "100%", }} />
-            <p style={{ padding: 25 }}>© 2024</p>
+            <p style={{ padding: 25 }}>© 2025</p>
         </div>
     )
 }

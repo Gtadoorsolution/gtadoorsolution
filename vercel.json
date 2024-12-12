@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/robots.txt",
+        "destination": "/api/robots"
+      }
+    ]
+  }
+  
