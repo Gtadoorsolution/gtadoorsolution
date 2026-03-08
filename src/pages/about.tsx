@@ -114,7 +114,7 @@ export default function about() {
                 </div>
                 <div>
                     <h3 className={styles.description}>Get in Touch</h3>
-                    <p className={styles.description}>For reliable and comprehensive locksmith and door solutions in Toronto and the GTA, trust GTADoorSolutions. Contact us today at +1 (437) 600-0688 or email us at gtadoorsolution@gmail.com to schedule an appointment or for emergency assistance.</p>
+                    <p className={styles.description}>For reliable and comprehensive locksmith and door solutions in Toronto and the GTA, trust GTADoorSolutions. Contact us today at 4372142768 or email us at gtadoorsolution@gmail.com to schedule an appointment or for emergency assistance.</p>
                     <div className={styles.description}>
                         <a href={`tel:${contacts.telNumber}`} style={{ display: "flex" }}>
                             <svg style={{ marginRight: 10 }} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
