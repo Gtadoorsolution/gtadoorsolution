@@ -209,7 +209,7 @@ const servicesPage: Service[] = [
                 description: "A garage door spring is essential for smooth operation but wears out over time. When it needs repair, professional assistance is crucial for quick and accurate service.",
             },
             {
-                image: "/services/garage-doors/Openers repair | installation.jpg",
+                image: "/services/garage-doors/Openers repair - installation.jpg",
                 title: "Openers repair / installation",
                 description: "For convenient garage door operation, a functional opener is essential. If yours isn't working or you need a new one, call our expert technicians. We quickly repair or install openers, ensuring your vehicles stay protected from bad weather. Our skilled team will have your door operating smoothly in no time.",
             },
@@ -219,7 +219,7 @@ const servicesPage: Service[] = [
                 description: "If your garage door is misaligned, a broken cable might be the cause. Cables balance the door’s weight and are crucial for smooth operation. A snapped or frayed cable can make your door inoperable, trapping you inside or outside.",
             },
             {
-                image: "/services/garage-doors/REMOTE REPAIR | PROGRAM.jpg",
+                image: "/services/garage-doors/REMOTE REPAIR - PROGRAM.jpg",
                 title: "REMOTE REPAIR / PROGRAM",
                 description: "We know how frustrating it is when your garage door remote fails. Whether it's a handheld or wall-mounted remote, our technicians can help fix it. Your remote is essential for easy and safe garage access, especially on rainy or snowy days.",
             },

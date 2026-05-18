@@ -2,5 +2,8 @@
 User-agent: *
 Allow: /
 
+# Host
+Host: https://gtadoorsolutions.ca
+
 # Sitemaps
 Sitemap: https://gtadoorsolutions.ca/sitemap.xml
