@@ -24,10 +24,10 @@ export default function Manufacturers() {
                                         33vw
                                         "
                                 layout="responsive"
-                                priority={true}
+                                // priority={true}
                                 placeholder="blur"
                                 blurDataURL="/default-ui.webp"
-                                loading='eager'
+                                loading='lazy'
                             />
                         </div>
                     </div>)
