@@ -30,12 +30,12 @@ export default function Resedential() {
             {/* <h2 className={locksmithStyles.headerTitle}>Residential locksmith</h2> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
-                <div className={locksmithStyles.textWrapper}>
+                <section className={locksmithStyles.textWrapper}>
                     <p className={locksmithStyles.textBolt}>Locked out of your home? Need to rekey your lock or install a new one? Doorsolution Locksmith is here to help with all your residential locksmith needs in the Greater Toronto Area (GTA). </p>
                     <p className={locksmithStyles.text}>Our comprehensive services cover everything from repairing and replacing door locks, safes, doors, and gates. Whether you're looking for the latest in home security solutions or simply need a cylinder lock changed, we've got you covered. </p>
                     <p className={locksmithStyles.text}>Rest assured, our professional locksmiths prioritize your family's safety and security. With our 24-hour emergency services, help is always available whenever you need it. </p>
                     <p className={locksmithStyles.textBolt}>Get in touch with us today for more information or assistance with your home security concerns.</p>
-                </div>
+                </section>
                 <div className={locksmithStyles.sliderWrapper}>
                     <Swiper
                         style={{ paddingBottom: 30 }}
@@ -93,7 +93,7 @@ export default function Resedential() {
                 <Strip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
-                        residentialLocksmith.map((category, index) => <div
+                        residentialLocksmith.map((category, index) => <article
                             key={index}
                         >
                             <div className={locksmithSubCategoryStyles['image-container']}>
@@ -111,9 +111,9 @@ export default function Resedential() {
                                         "
                                 />
                             </div>
-                            <p className={locksmithSubCategoryStyles.title}>{category.title}</p>
+                            <h3 className={locksmithSubCategoryStyles.title}>{category.title}</h3>
                             <p className={locksmithSubCategoryStyles.description}>{category.description}</p>
-                        </div>)
+                        </article>)
                     }
                 </div>
             </div>

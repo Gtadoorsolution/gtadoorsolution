@@ -30,11 +30,11 @@ export default function Commercial() {
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
-                <div className={locksmithStyles.textWrapper}>
+                <section className={locksmithStyles.textWrapper}>
                     <p className={locksmithStyles.textBolt}>Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city.</p>
                     <p className={locksmithStyles.text}>Whether you’re managing a retail store, warehouse, single office, or an entire office building, GTADoorSolutions is here to deliver high-quality locksmith services and security solutions tailored to your needs.</p>
                     <p className={locksmithStyles.textBolt}>We are fully licensed, bonded, and insured with coverage exceeding $5 million, ensuring that you receive the most reliable and secure service available.</p>
-                </div>
+                </section>
                 <div className={locksmithStyles.sliderWrapper}>
                     <Swiper
                         style={{ paddingBottom: 30 }}
@@ -107,7 +107,7 @@ export default function Commercial() {
                 <Strip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
-                        commercialLocksmith.map((category, index) => <div
+                        commercialLocksmith.map((category, index) => <article
                             key={index}
                         >
                             <div className={locksmithSubCategoryStyles['image-container']}>
@@ -125,9 +125,9 @@ export default function Commercial() {
                                         "
                                 />
                             </div>
-                            <p className={locksmithSubCategoryStyles.title}>{category.title}</p>
+                            <h3 className={locksmithSubCategoryStyles.title}>{category.title}</h3>
                             <p className={locksmithSubCategoryStyles.description}>{category.description}</p>
-                        </div>)
+                        </article>)
                     }
                 </div>
             </div>

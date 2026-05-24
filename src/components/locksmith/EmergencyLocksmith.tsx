@@ -30,13 +30,13 @@ export default function EmergencyLocksmith() {
             {/* <h3>Commercial locksmith</h3> */}
             <Breadcrumbs />
             <div className={locksmithStyles.wrapper}>
-                <div className={locksmithStyles.textWrapper}>
+                <section className={locksmithStyles.textWrapper}>
                     <p className={locksmithStyles.textBolt}>Welcome to GtaDoorSolutions – Your Trusted Lockout and Lock Installation Experts!</p>
                     <p className={locksmithStyles.textBolt}>Our services include:</p>
                     <p className={locksmithStyles.text}>Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs. </p>
                     <p className={locksmithStyles.textBolt}>Whether you're stranded outside your vehicle, locked out of your office during a crucial meeting, or unable to access your home or store, our team of skilled professionals is just a call away.</p>
                     <p className={locksmithStyles.text}>We understand the urgency and inconvenience of being locked out, which is why we prioritize prompt service and efficient solutions.</p>
-                </div>
+                </section>
                 <div className={locksmithStyles.sliderWrapper}>
                     <Swiper
                         style={{ paddingBottom: 30 }}
@@ -95,7 +95,7 @@ export default function EmergencyLocksmith() {
                 <Strip />
                 <div className={locksmithSubCategoryStyles.wrapper}>
                     {
-                        emergencyLocksmith.map((category, index) => <div
+                        emergencyLocksmith.map((category, index) => <article
                             key={index}
                         >
                             <div className={locksmithSubCategoryStyles['image-container']}>
@@ -113,9 +113,9 @@ export default function EmergencyLocksmith() {
                                         "
                                 />
                             </div>
-                            <p className={locksmithSubCategoryStyles.title}>{category.title}</p>
+                            <h3 className={locksmithSubCategoryStyles.title}>{category.title}</h3>
                             <p className={locksmithSubCategoryStyles.description}>{category.description}</p>
-                        </div>)
+                        </article>)
                     }
                 </div>
             </div>
