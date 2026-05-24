@@ -49,7 +49,7 @@ export default function Footer() {
                     <ul>
                         <li className={styles.service}><Link href="/services/locksmith-services/residential">Residential</Link></li>
                         <li className={styles.service}><Link href="/services/locksmith-services/commercial">Commercial</Link></li>
-                        <li className={styles.service}><Link href="/services/locksmith-services/commercial">Emergency</Link></li>
+                        <li className={styles.service}><Link href="/services/locksmith-services/emergency">Emergency</Link></li>
                     </ul>
                 </div>
             </div>
