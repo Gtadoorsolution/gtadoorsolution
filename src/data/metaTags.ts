@@ -55,7 +55,7 @@ const metaTags = [
         'canonical': "https://gtadoorsolutions.ca/services/commercial-door-repair"
     },
     {
-        page: "emergency-lockout",
+        page: "emergency",
         title: "Emergency Lockout",
         description: "",
         'og:type': "website",
@@ -63,7 +63,7 @@ const metaTags = [
         'og:description': "",
         'og:image': "/services/Emergency Lockout.jpg",
         'twitter:card': "",
-        'canonical': "https://gtadoorsolutions.ca/services/emergency-lockout"
+        'canonical': "https://gtadoorsolutions.ca/services/locksmith-services/emergencys"
     },
     {
         page: "front-entry-doors",

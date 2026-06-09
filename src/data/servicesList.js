@@ -50,7 +50,7 @@ const servicesList = [
     {
         title: "Emergency Lockout",
         description: "Emergency Lockout description",
-        link: "/services/emergency-lockout",
+        link: "/services/locksmith-services/emergency",
         image: "/services/Emergency Lockout.jpg"
     },
 ]
