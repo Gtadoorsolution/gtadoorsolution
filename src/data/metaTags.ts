@@ -90,10 +90,10 @@ const metaTags = [
     {
         page: "locksmith-services",
         title: "Locksmith-Service",
-        description: "Mr. Locks offers residential and commercial locksmith services in NYC. From lockouts to installations, we handle all your security needs. Contact us 24/7",
+        description: "GTA Door Solutions offers residential and commercial locksmith services Toronto and the Greater Toronto Area. From lockouts to installations, we handle all your security needs. Contact us 24/7",
         'og:type': "website",
         'og:title': "Locksmith-Service",
-        'og:description': "Mr. Locks offers residential and commercial locksmith services in NYC. From lockouts to installations, we handle all your security needs. Contact us 24/7",
+        'og:description': "GTA Door Solutions offers residential and commercial locksmith services Toronto and the Greater Toronto Area. From lockouts to installations, we handle all your security needs. Contact us 24/7",
         'og:image': "/services/Locksmith-Service.jpg",
         'twitter:card': "",
         'canonical': "https://gtadoorsolutions.ca/services/locksmith-services"
