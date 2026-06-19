@@ -18,7 +18,7 @@ export default function EmergencyLocksmith() {
                 <title>{'Emergency Locksmith'}</title>
                 <meta
                     name="description"
-                    content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
+                    content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! GTA Door Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
                 />
                 <meta property="og:image" content="/LogoBaner.svg" />
                 <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/emergency" />
@@ -33,7 +33,7 @@ export default function EmergencyLocksmith() {
                 <section className={locksmithStyles.textWrapper}>
                     <p className={locksmithStyles.textBolt}>Welcome to GtaDoorSolutions – Your Trusted Lockout and Lock Installation Experts!</p>
                     <p className={locksmithStyles.textBolt}>Our services include:</p>
-                    <p className={locksmithStyles.text}>Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! At Lockout Solutions, we specialize in providing swift and reliable solutions for all your lockout needs. </p>
+                    <p className={locksmithStyles.text}>Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! GTA Door Solutions, we specialize in providing swift and reliable solutions for all your lockout needs. </p>
                     <p className={locksmithStyles.textBolt}>Whether you're stranded outside your vehicle, locked out of your office during a crucial meeting, or unable to access your home or store, our team of skilled professionals is just a call away.</p>
                     <p className={locksmithStyles.text}>We understand the urgency and inconvenience of being locked out, which is why we prioritize prompt service and efficient solutions.</p>
                 </section>
