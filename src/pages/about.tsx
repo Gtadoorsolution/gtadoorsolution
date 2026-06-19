@@ -1,17 +1,21 @@
 import Layout from '@/components/Layout'
 import React from 'react'
 import styles from '../styles/about.module.css'
-import Head from 'next/head';
 import contacts from '../data/contacts'
+import SEO from '@/components/SEO'
+import metaTagsData from '@/data/metaTags'
 
 export default function about() {
+    const meta = metaTagsData.find(m => m.page === "about");
     return (
         <Layout>
-            <Head>
-                <title>About GTADoorSolutions</title>
-                <meta name="description" content="Welcome to GTADoorSolutions – your go-to experts for all things related to security and doors in Toronto and the Greater Toronto Area. We pride ourselves on delivering top-notch locksmith and door services that cater to the needs of homeowners, businesses, and vehicle owners alike." />
-                <link rel="canonical" href="https://gtadoorsolutions.ca/about" />
-            </Head>
+            <SEO
+                title={meta?.title}
+                description={meta?.description}
+                ogImage={meta?.['og:image']}
+                ogUrl={meta?.canonical}
+                canonical={meta?.canonical}
+            />
             <div className={styles.wrapper}>
                 <h1 className={styles.title}>About Locksmith</h1>
                 <p className={styles.description}>

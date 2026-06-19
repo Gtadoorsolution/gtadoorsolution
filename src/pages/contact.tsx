@@ -2,19 +2,23 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import contacts from '../data/contacts'
 import styles from '../styles/contact.module.css'
-import Head from 'next/head';
 import Image from 'next/image';
 import GetInTouch from '@/components/GetInTouch';
 import Strip from '@/components/Strip';
+import SEO from '@/components/SEO';
+import metaTagsData from '@/data/metaTags';
 
 const ContactPage = () => {
+    const meta = metaTagsData.find(m => m.page === "contact");
     return (
         <Layout>
-            <Head>
-                <title>CONTACT US</title>
-                <meta name="description" content="Have Questions? Get in Touch!" />
-                <link rel="canonical" href="https://gtadoorsolutions.ca/contact" />
-            </Head>
+            <SEO
+                title={meta?.title}
+                description={meta?.description}
+                ogImage={meta?.['og:image']}
+                ogUrl={meta?.canonical}
+                canonical={meta?.canonical}
+            />
             <div className={styles.wrapper}>
                 <p className={styles.title}>CONTACT US</p>
                 <h1 className={styles.title}>Have Questions? Get in Touch!</h1>

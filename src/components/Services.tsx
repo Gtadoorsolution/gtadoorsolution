@@ -3,18 +3,9 @@ import styles from '../styles/services.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import servicesList from '../data/servicesList'
-import Head from 'next/head';
-
 export default function Services() {
     return (
         <div className={styles.wrapper}>
-            <Head>
-                <title>GTADoorSolutions</title>
-                <meta
-                    name="description"
-                    content="description"
-                />
-            </Head>
             <p className={styles.title2}>PREMIUM QUALITY</p>
             <h1 className={styles.title}>Our Services Make Your Life Comfortable</h1>
             <div className={styles.grid}>
