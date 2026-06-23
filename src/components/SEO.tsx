@@ -16,6 +16,24 @@ export default function SEO({
   ogUrl = "https://gtadoorsolutions.ca/",
   canonical,
 }: SEOProps) {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GTA Door Solutions",
+    "url": "https://gtadoorsolutions.ca",
+    "telephone": "+14372142768",
+    "email": "gtadoorsolution@gmail.com",
+    "description": "Professional 24/7 locksmith & commercial door repair services in Toronto & GTA.",
+    "areaServed": [
+      "Toronto", "North York", "Scarborough", "Markham",
+      "Pickering", "Ajax", "Whitby", "Oshawa",
+      "Vaughan", "Richmond Hill", "Brampton", "Mississauga"
+    ],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg"
+  };
+
   return (
     <Head>
       <title>{title}</title>
@@ -36,6 +54,13 @@ export default function SEO({
       
       {/* Canonical Link */}
       {canonical && <link rel="canonical" href={canonical} key="canonical" />}
+
+      {/* Structured Data: LocalBusiness */}
+      <script
+        type="application/ld+json"
+        key="local-business-schema"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
     </Head>
   );
 }
