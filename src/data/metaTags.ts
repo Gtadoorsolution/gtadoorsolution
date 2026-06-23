@@ -6,7 +6,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "GTA Door Solutions | Locksmith & Door Repair Toronto",
         'og:description': "Professional 24/7 locksmith & commercial door repair services in Toronto & GTA. We specialize in lockouts, storefront repairs, automatic doors, and entry systems.",
-        'og:image': "/LogoBaner.svg",
+        'og:image': "/open-graph-logo.jpg",
         'twitter:card': "summary_large_image",
         'canonical': "https://gtadoorsolutions.ca/"
     },
@@ -116,7 +116,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "About GTA Door Solutions | Locksmith & Door Experts Toronto",
         'og:description': "Learn more about GTA Door Solutions, your trusted team of licensed locksmiths and commercial door installation specialists in Toronto and the Greater Toronto Area.",
-        'og:image': "/LogoBaner.svg",
+        'og:image': "/open-graph-logo.jpg",
         'twitter:card': "summary_large_image",
         'canonical': "https://gtadoorsolutions.ca/about"
     },
@@ -127,7 +127,7 @@ const metaTags = [
         'og:type': "website",
         'og:title': "Contact GTA Door Solutions | 24/7 Door & Locksmith Services",
         'og:description': "Contact GTA Door Solutions for fast locksmith help and commercial door repairs in Toronto & GTA. Call us at 437-214-2768 or get a free security service quote online.",
-        'og:image': "/LogoBaner.svg",
+        'og:image': "/open-graph-logo.jpg",
         'twitter:card': "summary_large_image",
         'canonical': "https://gtadoorsolutions.ca/contact"
     },

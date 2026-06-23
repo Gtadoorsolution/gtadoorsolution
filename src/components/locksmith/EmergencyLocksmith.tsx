@@ -37,7 +37,7 @@ export default function EmergencyLocksmith() {
                     name="description"
                     content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! GTA Door Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
                 />
-                <meta property="og:image" content="/LogoBaner.svg" />
+                <meta property="og:image" content="/open-graph-logo.jpg" />
                 <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/emergency" />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

@@ -12,7 +12,7 @@ interface SEOProps {
 export default function SEO({
   title = "GTADOORSOLUTION",
   description = "MAKING SURE THE KEYS ARE IN YOUR HANDS",
-  ogImage = "/LogoBaner.svg",
+  ogImage = "/open-graph-logo.jpg",
   ogUrl = "https://gtadoorsolutions.ca/",
   canonical,
 }: SEOProps) {

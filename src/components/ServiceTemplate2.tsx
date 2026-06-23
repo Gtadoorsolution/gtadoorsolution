@@ -74,7 +74,7 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
                         name="description"
                         content={article1 || "MAKING SURE THE KEYS ARE IN YOUR HANDS"}
                     />
-                    <meta property="og:image" content="/LogoBaner.svg" />
+                    <meta property="og:image" content="/open-graph-logo.jpg" />
                     {/* <meta property="og:image" content={metaTagsData.find(meta => meta.page === "access-control-system")?.['og:image']} /> */}
                     <link rel="canonical" href={canonical} />
                     <script

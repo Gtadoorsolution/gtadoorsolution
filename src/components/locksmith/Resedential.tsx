@@ -37,7 +37,7 @@ export default function Resedential() {
                     name="description"
                     content={"Locked out of your home? Need to rekey your lock or install a new one? Doorsolution Locksmith is here to help with all your residential locksmith needs in the Greater Toronto Area (GTA)."}
                 />
-                <meta property="og:image" content="/LogoBaner.svg" />
+                <meta property="og:image" content="/open-graph-logo.jpg" />
                 <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/residential" />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
