@@ -12,6 +12,23 @@ import Strip from '../Strip';
 import Head from 'next/head';
 
 export default function Commercial() {
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Commercial Locksmith",
+        "description": "Founded in 2009, GTA Door Solutions provides top-notch commercial locksmith services to property management firms, real estate agencies, retail stores, schools, medical facilities, and many other commercial establishments across the GTA.",
+        "provider": { "@type": "LocalBusiness", "name": "GTA Door Solutions", "url": "https://gtadoorsolutions.ca", "telephone": "+14372142768", "priceRange": "$$", "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg" },
+        "areaServed": "Greater Toronto Area"
+    };
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gtadoorsolutions.ca" },
+            { "@type": "ListItem", "position": 2, "name": "Locksmith Services", "item": "https://gtadoorsolutions.ca/services/locksmith-services" },
+            { "@type": "ListItem", "position": 3, "name": "Commercial Locksmith", "item": "https://gtadoorsolutions.ca/services/locksmith-services/commercial" }
+        ]
+    };
     return (
         <div>
             <Head>
@@ -20,8 +37,10 @@ export default function Commercial() {
                     name="description"
                     content={"Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city."}
                 />
-                <meta property="og:image" content="/LogoBaner.svg" />
+                <meta property="og:image" content="/open-graph-logo.jpg" />
                 <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/commercial" />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             </Head>
             <LocksmithLogo
                 title={'Commercial Locksmith'}

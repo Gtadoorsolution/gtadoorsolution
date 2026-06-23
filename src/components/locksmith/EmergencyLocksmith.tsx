@@ -12,6 +12,23 @@ import Strip from '../Strip';
 import Head from 'next/head';
 
 export default function EmergencyLocksmith() {
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Emergency Locksmith",
+        "description": "Locked out of your car, office, condo, house, or store? GTA Door Solutions provides swift and reliable solutions for all your lockout needs.",
+        "provider": { "@type": "LocalBusiness", "name": "GTA Door Solutions", "url": "https://gtadoorsolutions.ca", "telephone": "+14372142768", "priceRange": "$$", "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg" },
+        "areaServed": "Greater Toronto Area"
+    };
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gtadoorsolutions.ca" },
+            { "@type": "ListItem", "position": 2, "name": "Locksmith Services", "item": "https://gtadoorsolutions.ca/services/locksmith-services" },
+            { "@type": "ListItem", "position": 3, "name": "Emergency Locksmith", "item": "https://gtadoorsolutions.ca/services/locksmith-services/emergency" }
+        ]
+    };
     return (
         <div>
             <Head>
@@ -22,6 +39,8 @@ export default function EmergencyLocksmith() {
                 />
                 <meta property="og:image" content="/LogoBaner.svg" />
                 <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/emergency" />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             </Head>
             <LocksmithLogo
                 title={'Emergency Locksmith'}

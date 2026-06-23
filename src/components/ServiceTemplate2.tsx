@@ -40,7 +40,30 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
     canonical
 }) => {
 
-    console.log(categories)
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": title,
+        "description": article1,
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "GTA Door Solutions",
+            "url": "https://gtadoorsolutions.ca",
+            "telephone": "+14372142768",
+            "priceRange": "$$",
+            "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg"
+        },
+        "areaServed": "Greater Toronto Area"
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://gtadoorsolutions.ca" },
+            { "@type": "ListItem", "position": 2, "name": title, "item": canonical }
+        ]
+    };
 
     return (
         <Layout>
@@ -54,6 +77,14 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
                     <meta property="og:image" content="/LogoBaner.svg" />
                     {/* <meta property="og:image" content={metaTagsData.find(meta => meta.page === "access-control-system")?.['og:image']} /> */}
                     <link rel="canonical" href={canonical} />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                    />
                 </Head>
                 <LocksmithLogo
                     title={title || 'Residential Locksmith'}
