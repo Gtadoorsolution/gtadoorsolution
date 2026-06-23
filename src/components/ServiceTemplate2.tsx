@@ -115,7 +115,7 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
                                 sliderImages?.map((image, index) => <SwiperSlide key={index}>
                                     <Image
                                         src={image || "/services/locksmith/recedential/1.jpg"}
-                                        alt={"default-ui.webp"}
+                                        alt={`${title || 'Service'} - photo ${index + 1}`}
                                         width={600}
                                         height={419}
                                         layout="responsive"

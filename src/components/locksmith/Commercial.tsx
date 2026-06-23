@@ -68,7 +68,7 @@ export default function Commercial() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/1.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Commercial locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -82,7 +82,7 @@ export default function Commercial() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/2.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Commercial locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -96,7 +96,7 @@ export default function Commercial() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/3.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Commercial locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -110,7 +110,7 @@ export default function Commercial() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/4.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Commercial locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"

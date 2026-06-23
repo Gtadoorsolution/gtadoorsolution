@@ -68,7 +68,7 @@ export default function Resedential() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/recedential/1.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Residential locksmith service in Toronto"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -82,7 +82,7 @@ export default function Resedential() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/recedential/2.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Residential locksmith service in Toronto"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -96,7 +96,7 @@ export default function Resedential() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/recedential/3.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Residential locksmith service in Toronto"}
                                 width={600}
                                 height={419}
                                 layout="responsive"

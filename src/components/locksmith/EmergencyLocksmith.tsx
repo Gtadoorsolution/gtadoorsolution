@@ -70,7 +70,7 @@ export default function EmergencyLocksmith() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/emergency/categories/1 Car lockout.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Emergency locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -84,7 +84,7 @@ export default function EmergencyLocksmith() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/3.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Emergency locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
@@ -98,7 +98,7 @@ export default function EmergencyLocksmith() {
                         <SwiperSlide>
                             <Image
                                 src={"/services/locksmith/commercial/2.jpg"}
-                                alt={"default-ui.webp"}
+                                alt={"Emergency locksmith service in Toronto GTA"}
                                 width={600}
                                 height={419}
                                 layout="responsive"
