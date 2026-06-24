@@ -10,7 +10,7 @@ export default function Services() {
             <h1 className={styles.title}>Our Services Make Your Life Comfortable</h1>
             <div className={styles.grid}>
                 {servicesList.map(
-                    service => <div key={service.image} className={styles.element}>
+                    (service, index) => <div key={service.image} className={styles.element}>
                         <Link href={service.link}>
                             <div style={{ paddingBottom: 30, paddingTop: 30 }}>
                                 <div className={styles.imageWrapper}>
@@ -27,10 +27,7 @@ export default function Services() {
                                         33vw
                                         "
                                         layout="responsive"
-                                        priority={true}
-                                        placeholder="blur"
-                                        blurDataURL="/default-ui.webp"
-                                        loading='eager'
+                                        priority={index < 2}
                                     />
                                 </div>
                                 <h2 className={styles.title4}>{service.title}</h2>
