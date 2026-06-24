@@ -10,6 +10,7 @@ import LocksmithLogo from './LocksmithLogo'
 import Breadcrumbs from '../Breadcrumbs'
 import Strip from '../Strip'
 import Head from 'next/head'
+import contacts from '@/data/contacts'
 
 export default function Resedential() {
     const serviceSchema = {
@@ -17,7 +18,7 @@ export default function Resedential() {
         "@type": "Service",
         "name": "Residential Locksmith",
         "description": "Locked out of your home? Need to rekey your lock or install a new one? GTA Door Solutions handles all your residential locksmith needs in the Greater Toronto Area.",
-        "provider": { "@type": "LocalBusiness", "name": "GTA Door Solutions", "url": "https://gtadoorsolutions.ca", "telephone": "+14372142768", "priceRange": "$$", "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg" },
+        "provider": { "@type": "LocalBusiness", "name": "GTA Door Solutions", "url": "https://gtadoorsolutions.ca", "telephone": contacts.telE164, "priceRange": "$$", "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg" },
         "areaServed": "Greater Toronto Area"
     };
     const breadcrumbSchema = {

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import contacts from '@/data/contacts';
 
 interface SEOProps {
   title?: string;
@@ -21,8 +22,8 @@ export default function SEO({
     "@type": "LocalBusiness",
     "name": "GTA Door Solutions",
     "url": "https://gtadoorsolutions.ca",
-    "telephone": "+14372142768",
-    "email": "gtadoorsolution@gmail.com",
+    "telephone": contacts.telE164,
+    "email": contacts.email,
     "description": "Professional 24/7 locksmith & commercial door repair services in Toronto & GTA.",
     "areaServed": [
       "Toronto", "North York", "Scarborough", "Markham",

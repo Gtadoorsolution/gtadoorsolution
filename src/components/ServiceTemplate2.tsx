@@ -11,6 +11,7 @@ import Breadcrumbs from './Breadcrumbs'
 import Strip from './Strip'
 import Layout from '../components/Layout'
 import Head from 'next/head';
+import contacts from '@/data/contacts';
 
 interface ServiceTemplateProps2 {
     title: string | undefined;
@@ -49,7 +50,7 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
             "@type": "LocalBusiness",
             "name": "GTA Door Solutions",
             "url": "https://gtadoorsolutions.ca",
-            "telephone": "+14372142768",
+            "telephone": contacts.telE164,
             "priceRange": "$$",
             "image": "https://gtadoorsolutions.ca/open-graph-logo.jpg"
         },
