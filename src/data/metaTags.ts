@@ -56,14 +56,36 @@ const metaTags = [
     },
     {
         page: "emergency",
-        title: "24/7 Emergency Lockout & Locksmith Services Toronto | GTA Door Solutions",
-        description: "Locked out? Fast 24/7 emergency lockout and locksmith service in Toronto & GTA. Safe and rapid residential, commercial, and automotive lock opening.",
+        title: "24/7 Emergency Locksmith Toronto | Fast Lockout Service | GTA Door Solutions",
+        description: "Locked out in Toronto or GTA? GTA Door Solutions provides fast 24/7 emergency locksmith service — residential, commercial & automotive. No hidden fees. Call now: 437-214-2768.",
         'og:type': "website",
-        'og:title': "24/7 Emergency Lockout & Locksmith Services Toronto | GTA Door Solutions",
-        'og:description': "Locked out? Fast 24/7 emergency lockout and locksmith service in Toronto & GTA. Safe and rapid residential, commercial, and automotive lock opening.",
-        'og:image': "/services/Emergency Lockout.jpg",
+        'og:title': "24/7 Emergency Locksmith Toronto | Fast Lockout Service | GTA Door Solutions",
+        'og:description': "Locked out in Toronto or GTA? GTA Door Solutions provides fast 24/7 emergency locksmith service — residential, commercial & automotive. No hidden fees.",
+        'og:image': "/open-graph-logo.jpg",
         'twitter:card': "summary_large_image",
         'canonical': "https://gtadoorsolutions.ca/services/locksmith-services/emergency"
+    },
+    {
+        page: "residential",
+        title: "Residential Locksmith Toronto | 24/7 Home Lock Services | GTA Door Solutions",
+        description: "Need a residential locksmith in Toronto? GTA Door Solutions offers 24/7 lock installation, rekeying, deadbolt upgrades & emergency lockout services across the GTA. Call 437-214-2768.",
+        'og:type': "website",
+        'og:title': "Residential Locksmith Toronto | 24/7 Home Lock Services | GTA Door Solutions",
+        'og:description': "Need a residential locksmith in Toronto? GTA Door Solutions offers 24/7 lock installation, rekeying, deadbolt upgrades & emergency lockout services across the GTA.",
+        'og:image': "/open-graph-logo.jpg",
+        'twitter:card': "summary_large_image",
+        'canonical': "https://gtadoorsolutions.ca/services/locksmith-services/residential"
+    },
+    {
+        page: "commercial",
+        title: "Commercial Locksmith Toronto | Master Keys & Access Control | GTA Door Solutions",
+        description: "Professional commercial locksmith services in Toronto & GTA since 2009. Master key systems, high-security locks, panic bars & 24/7 emergency response. Licensed & insured. Call 437-214-2768.",
+        'og:type': "website",
+        'og:title': "Commercial Locksmith Toronto | Master Keys & Access Control | GTA Door Solutions",
+        'og:description': "Professional commercial locksmith services in Toronto & GTA since 2009. Master key systems, high-security locks, panic bars & 24/7 emergency response. Licensed & insured.",
+        'og:image': "/open-graph-logo.jpg",
+        'twitter:card': "summary_large_image",
+        'canonical': "https://gtadoorsolutions.ca/services/locksmith-services/commercial"
     },
     {
         page: "front-entry-doors",

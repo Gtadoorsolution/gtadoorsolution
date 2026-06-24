@@ -11,8 +11,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import Strip from '../Strip';
 import Head from 'next/head';
 import contacts from '@/data/contacts';
+import metaTagsData from '@/data/metaTags';
 
 export default function EmergencyLocksmith() {
+    const meta = metaTagsData.find(m => m.page === "emergency");
     const serviceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -33,13 +35,20 @@ export default function EmergencyLocksmith() {
     return (
         <div>
             <Head>
-                <title>{'Emergency Locksmith'}</title>
-                <meta
-                    name="description"
-                    content={"Locked out of your car, office, condo, house, or store? Don't fret, because we've got you covered! GTA Door Solutions, we specialize in providing swift and reliable solutions for all your lockout needs."}
-                />
-                <meta property="og:image" content="/open-graph-logo.jpg" />
-                <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/emergency" />
+                <title>{meta?.title}</title>
+                <meta name="description" content={meta?.description} />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="GTA Door Solutions" />
+                <meta property="og:locale" content="en_CA" />
+                <meta property="og:title" content={meta?.['og:title']} />
+                <meta property="og:description" content={meta?.['og:description']} />
+                <meta property="og:image" content="https://gtadoorsolutions.ca/open-graph-logo.jpg" />
+                <meta property="og:url" content={meta?.canonical} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={meta?.['og:title']} />
+                <meta name="twitter:description" content={meta?.['og:description']} />
+                <meta name="twitter:image" content="https://gtadoorsolutions.ca/open-graph-logo.jpg" />
+                <link rel="canonical" href={meta?.canonical} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             </Head>

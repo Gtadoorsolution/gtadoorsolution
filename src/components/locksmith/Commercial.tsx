@@ -11,8 +11,10 @@ import Breadcrumbs from '../Breadcrumbs';
 import Strip from '../Strip';
 import Head from 'next/head';
 import contacts from '@/data/contacts';
+import metaTagsData from '@/data/metaTags';
 
 export default function Commercial() {
+    const meta = metaTagsData.find(m => m.page === "commercial");
     const serviceSchema = {
         "@context": "https://schema.org",
         "@type": "Service",
@@ -33,13 +35,20 @@ export default function Commercial() {
     return (
         <div>
             <Head>
-                <title>{'Commercial Locksmith'}</title>
-                <meta
-                    name="description"
-                    content={"Founded in 2009, GTADoorSolutions has grown to become a leading name in the locksmith industry. We specialize in providing top-notch commercial locksmith services to a diverse range of clients, including new construction projects, property management firms, real estate agencies, architects, interior designers, retail stores, restaurants, schools, universities, medical facilities, apartment complexes, small businesses, and many other commercial establishments across the city."}
-                />
-                <meta property="og:image" content="/open-graph-logo.jpg" />
-                <link rel="canonical" href="https://gtadoorsolutions.ca/services/locksmith-services/commercial" />
+                <title>{meta?.title}</title>
+                <meta name="description" content={meta?.description} />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="GTA Door Solutions" />
+                <meta property="og:locale" content="en_CA" />
+                <meta property="og:title" content={meta?.['og:title']} />
+                <meta property="og:description" content={meta?.['og:description']} />
+                <meta property="og:image" content="https://gtadoorsolutions.ca/open-graph-logo.jpg" />
+                <meta property="og:url" content={meta?.canonical} />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={meta?.['og:title']} />
+                <meta name="twitter:description" content={meta?.['og:description']} />
+                <meta name="twitter:image" content="https://gtadoorsolutions.ca/open-graph-logo.jpg" />
+                <link rel="canonical" href={meta?.canonical} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             </Head>
