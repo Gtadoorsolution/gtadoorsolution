@@ -42,6 +42,8 @@ export default function SEO({
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" key="og_type" />
+      <meta property="og:site_name" content="GTA Door Solutions" key="og_site_name" />
+      <meta property="og:locale" content="en_CA" key="og_locale" />
       <meta property="og:title" content={title} key="og_title" />
       <meta property="og:description" content={description} key="og_description" />
       <meta property="og:image" content={ogImage} key="og_image" />
