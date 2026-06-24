@@ -82,10 +82,7 @@ export default function NavBar() {
                                         (max-width: 1024px) 50vw,
                                         33vw
                                         "
-                                                    priority={true}
-                                                    placeholder="blur"
-                                                    blurDataURL="/default-ui.webp"
-                                                    loading='eager'
+                                                    loading='lazy'
                                                 />
                                                 <p>{service.title}</p>
                                             </div>
@@ -120,12 +117,9 @@ export default function NavBar() {
                                     <span onClick={handleMenuToggleMobile}>Services</span>
                                     {isMenuOpenMobile && (
                                         <ul className={`${styles.submenuMobile} ${isMenuOpenMobile && styles.open}`}>
-                                            {servicesList.map(service => {
-                                                // Цей виклик console.log() виконується для кожного елемента у servicesList
-                                                // перед тим, як повертати JSX для цього елемента.
-                                                console.log(router.pathname, service.link);
+                                            {servicesList.map((service, index) => {
                                                 return (
-                                                    <li className={router.pathname === service.link ? styles.uHere : styles.menuItem}>
+                                                    <li key={index} className={router.pathname === service.link ? styles.uHere : styles.menuItem}>
                                                         <Link href={service.link}>
                                                             <p>{service.title}</p>
                                                         </Link>
