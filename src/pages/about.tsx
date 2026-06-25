@@ -17,25 +17,25 @@ export default function about() {
                 canonical={meta?.canonical}
             />
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>About Locksmith</h1>
+                <h1 className={styles.title}>About GTA Door Solutions — Locksmith &amp; Door Experts in Toronto</h1>
                 <p className={styles.description}>
                     Welcome to GTADoorSolutions – your go-to experts for all things related to security and doors in Toronto and the Greater Toronto Area. We pride ourselves on delivering top-notch locksmith and door services that cater to the needs of homeowners, businesses, and vehicle owners alike.
                 </p>
-                <h3  className={styles.title}>Who We Are</h3>
+                <h2 className={styles.title}>Who We Are</h2>
                 <p className={styles.description}>
                     At GTADoorSolutions, our goal is to provide reliable and expert locksmith and door solutions. Our team of licensed and insured professionals is here to handle all your security and door needs with skill and efficiency.
                 </p>
                 <div>
-                    <h3 className={styles.description}>
+                    <h2 className={styles.description}>
                         Our Mission
-                    </h3>
+                    </h2>
                     <p className={styles.description}>We are dedicated to keeping your home, business, and vehicle safe and secure. Our mission is to offer quick, affordable, and high-quality services tailored to your needs. Whether it’s an emergency or a routine service, we’re here to provide the best solutions for you.
                     </p>
                 </div>
                 <div>
-                    <h3 className={styles.description}>
+                    <h2 className={styles.description}>
                         Our Services
-                    </h3>
+                    </h2>
                     <ul>
                         <li>
                             <p className={styles.description}>
@@ -84,9 +84,9 @@ export default function about() {
                         </li>
                     </ul>
                 </div>
-                <h3 className={styles.description}>
+                <h2 className={styles.description}>
                     Serving the Greater Toronto Area
-                </h3>
+                </h2>
                 <div>
                     <p style={{ paddingBottom: 10 }} className={styles.description}>GTADoorSolutions proudly serves a wide range of locations across Toronto and the GTA, including:</p>
                     <ul>
@@ -107,7 +107,7 @@ export default function about() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className={styles.description}>Why Choose Us?</h3>
+                    <h2 className={styles.description}>Why Choose Us?</h2>
                     <ul>
                         <li><p className={styles.description}><b>24/7 Availability:</b> We’re available around the clock to assist you with emergency and non-emergency needs.</p></li>
                         <li><p className={styles.description}><b>Fast Response:</b> We understand the urgency of security issues and offer rapid response times to minimize disruption.</p></li>
@@ -117,7 +117,7 @@ export default function about() {
                     </ul>
                 </div>
                 <div>
-                    <h3 className={styles.description}>Get in Touch</h3>
+                    <h2 className={styles.description}>Get in Touch</h2>
                     <p className={styles.description}>For reliable and comprehensive locksmith and door solutions in Toronto and the GTA, trust GTADoorSolutions. Contact us today at {contacts.telNumberView} or email us at {contacts.email} to schedule an appointment or for emergency assistance.</p>
                     <div className={styles.description}>
                         <a href={`tel:${contacts.telNumber}`} style={{ display: "flex" }}>
@@ -133,7 +133,7 @@ export default function about() {
                             <a href={`mailto:${contacts.email || ""}`}>{contacts.email || ""}</a>
                         </div>
                     </div>
-                    <h5 className={styles.description}>GTADoorSolutions – Securing Your World, One Lock and Door at a Time.</h5>
+                    <p className={styles.description}><strong>GTADoorSolutions – Securing Your World, One Lock and Door at a Time.</strong></p>
                 </div>
             </div>
         </Layout>
