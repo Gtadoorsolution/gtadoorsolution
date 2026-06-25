@@ -41,6 +41,21 @@ export default function Footer() {
                         <li className={styles.service}><Link href="/contact">Contact</Link></li>
                     </ul>
                 </div>
+                <div className={styles.card}>
+                    <h2>
+                        Services
+                    </h2>
+                    <ul>
+                        <li className={styles.service}><Link href="/services/locksmith-services">Locksmith Services</Link></li>
+                        <li className={styles.service}><Link href="/services/commercial-door-repair">Commercial Door Repair</Link></li>
+                        <li className={styles.service}><Link href="/services/aluminum-storefronts">Aluminum Storefronts</Link></li>
+                        <li className={styles.service}><Link href="/services/automatic-doors">Automatic Doors</Link></li>
+                        <li className={styles.service}><Link href="/services/access-control-system">Access Control Systems</Link></li>
+                        <li className={styles.service}><Link href="/services/garage-doors">Garage Doors</Link></li>
+                        <li className={styles.service}><Link href="/services/front-entry-doors">Front Entry Doors</Link></li>
+                        <li className={styles.service}><Link href="/services/metal-fire-rated-doors">Metal Fire-Rated Doors</Link></li>
+                    </ul>
+                </div>
                 <div
                     className={styles.card}>
                     <h2>
