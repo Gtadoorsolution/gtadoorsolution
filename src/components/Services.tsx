@@ -6,8 +6,8 @@ import servicesList from '../data/servicesList'
 export default function Services() {
     return (
         <div className={styles.wrapper}>
-            <p className={styles.title2}>PREMIUM QUALITY</p>
-            <h1 className={styles.title}>Our Services Make Your Life Comfortable</h1>
+            <p className={styles.title2}>OUR SERVICES MAKE YOUR LIFE COMFORTABLE</p>
+            <h1 className={styles.title}>Locksmith &amp; Door Repair Services in Toronto &amp; the GTA</h1>
             <div className={styles.grid}>
                 {servicesList.map(
                     (service, index) => <div key={service.image} className={styles.element}>
