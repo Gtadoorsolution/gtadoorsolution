@@ -37,5 +37,6 @@ export default function AutomaticDoors() {
         article4={serviceData2?.article4}
         categories={serviceData2?.categories}
         canonical={canonicalUrl}
+        metaTags={metaTags}
     />
 }

@@ -27,6 +27,13 @@ interface ServiceTemplateProps2 {
         description: string | undefined;
     }[] | undefined;
     canonical: string;
+    metaTags?: {
+        title?: string;
+        description?: string;
+        'og:title'?: string;
+        'og:description'?: string;
+        'og:image'?: string;
+    };
 }
 
 const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
@@ -38,7 +45,8 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
     article3,
     article4,
     categories,
-    canonical
+    canonical,
+    metaTags
 }) => {
 
     const serviceSchema = {
@@ -70,13 +78,21 @@ const ServiceTemplate2: React.FC<ServiceTemplateProps2> = ({
         <Layout>
             <div>
                 <Head>
-                    <title>{title || 'GTADOORSOLUTIONS'}</title>
+                    <title>{metaTags?.title || title || 'GTADOORSOLUTIONS'}</title>
                     <meta
                         name="description"
-                        content={article1 || "MAKING SURE THE KEYS ARE IN YOUR HANDS"}
+                        content={metaTags?.description || article1 || "MAKING SURE THE KEYS ARE IN YOUR HANDS"}
                     />
-                    <meta property="og:image" content="/open-graph-logo.jpg" />
-                    {/* <meta property="og:image" content={metaTagsData.find(meta => meta.page === "access-control-system")?.['og:image']} /> */}
+                    <meta property="og:type" content="website" />
+                    <meta property="og:site_name" content="GTA Door Solutions" />
+                    <meta property="og:locale" content="en_CA" />
+                    <meta property="og:title" content={metaTags?.['og:title'] || metaTags?.title || title || ''} />
+                    <meta property="og:description" content={metaTags?.['og:description'] || metaTags?.description || article1 || ''} />
+                    <meta property="og:image" content={metaTags?.['og:image'] || "/open-graph-logo.jpg"} />
+                    <meta property="og:url" content={canonical} />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content={metaTags?.title || title || ''} />
+                    <meta name="twitter:description" content={metaTags?.description || article1 || ''} />
                     <link rel="canonical" href={canonical} />
                     <script
                         type="application/ld+json"
